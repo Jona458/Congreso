@@ -10,8 +10,10 @@
           <ion-card-subtitle>{{i.descripcion}}</ion-card-subtitle>
           <ion-card-subtitle>{{i.escuela}}</ion-card-subtitle>
         </ion-card-header>
-        <div class="button-container"> <!-- Agregar un contenedor para el botón -->
-          <ion-button color="danger">Ver mas</ion-button>
+        <div class="button-container">
+          <a [routerLink]="i.enlace" routerDirection="forward">
+            <ion-button color="danger">Ver más</ion-button>
+          </a>
         </div>
       </ion-card>
     </ion-col>

@@ -8,6 +8,7 @@ import { TalleresPageRoutingModule } from './talleres-routing.module';
 
 import { TalleresPage } from './talleres.page';
 import { FotografiasComponent } from './fotografias/fotografias.component';
+import { AplicacionesComponent } from './aplicaciones/aplicaciones.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { FotografiasComponent } from './fotografias/fotografias.component';
     IonicModule,
     TalleresPageRoutingModule
   ],
-  declarations: [TalleresPage,FotografiasComponent]
+  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent]
 })
 export class TalleresPageModule {}

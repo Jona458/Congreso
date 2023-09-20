@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -10,14 +11,16 @@ export class ActividadService {
       nomAct:'Aplicaciones de sensores en Robótica',
       imagen:'assets/sensores.png',
       descripcion:'Mtro. Juan Francisco Meléndez Elizalde',
-      escuela:"Tecnológico de Estudios Superiores de Ecatepec"
+      escuela:"Tecnológico de Estudios Superiores de Ecatepec",
+      enlace: "/aplicaciones",
   },
   {
-    id:'2',
+    id:'2', 
     nomAct:'IntegrAI Nexus',
     imagen:'assets/ia.jpg',
     descripcion:'M. en I.S.C. Rubén Raya Delgado NDS Cognitive Labs del Tecnológico de Monterrey',
     escuela:"Tecnológico de Monterrey",
+    enlace: "/integrai",
   },
   {
     id:'3',
