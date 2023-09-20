@@ -8,9 +8,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'talleres',
     pathMatch: 'full'
   },
+  {
+    path: 'talleres',
+    loadChildren: () => import('./talleres/talleres.module').then( m => m.TalleresPageModule)
+  },
+
 ];
 
 @NgModule({
