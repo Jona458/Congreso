@@ -17,6 +17,6 @@ import { AplicacionesComponent } from './aplicaciones/aplicaciones.component';
     IonicModule,
     TalleresPageRoutingModule
   ],
-  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent]
+  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent,]
 })
 export class TalleresPageModule {}

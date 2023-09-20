@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AplicacionesComponent } from './talleres/aplicaciones/aplicaciones.component';
 import { IntegraiComponent } from './talleres/integrai/integrai.component';
+import { RosypencvComponent } from './talleres/rosypencv/rosypencv.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,8 @@ const routes: Routes = [
   },
   { path: 'aplicaciones', component: AplicacionesComponent},
   { path: 'integrai', component: IntegraiComponent},
+  { path: 'rosyoencv', component: RosypencvComponent},
+
 ];
 
 @NgModule({

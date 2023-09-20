@@ -28,6 +28,8 @@ export class ActividadService {
     imagen:'assets/ROS.jpeg',
     descripcion:'Dr. Noé Velázquez López',
     escuela:"Universidad Autónoma Chapingo",
+    enlace: "/rosypencv",
+  
   },
   {
     id:'4',
