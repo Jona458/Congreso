@@ -1,3 +1,4 @@
+import { ActividadService } from './../actividad.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fotografias.component.scss'],
 })
 export class FotografiasComponent  implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
+  actividades:any[] =[];
+  constructor(private serveactividad:ActividadService) { }
+  ngOnInit() {
+    this.actividades= this.serveactividad.gedActividad();
+    console.log(this.actividades);
+  }
 
 }

@@ -4,32 +4,53 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ActividadService {
-  prod=[
+  actividad=[
     {
       id:'1',
-      nomProd:'PC',
-      imagen:'assets/pc1.jpeg',
-      descripcion:'LO MEJOR EN PC',
+      nomAct:'Aplicaciones de sensores en Robótica',
+      imagen:'assets/sensores.png',
+      descripcion:'Mtro. Juan Francisco Meléndez Elizalde',
+      escuela:"Tecnológico de Estudios Superiores de Ecatepec"
   },
   {
     id:'2',
-    nomProd:'LAPTOP',
-    imagen:'assets/lap1.jpeg',
-    descripcion:'LO MEJOR EN LAP',
+    nomAct:'IntegrAI Nexus',
+    imagen:'assets/ia.jpg',
+    descripcion:'M. en I.S.C. Rubén Raya Delgado NDS Cognitive Labs del Tecnológico de Monterrey',
+    escuela:"Tecnológico de Monterrey",
   },
   {
     id:'3',
-    nomProd:'MOUSE',
-    imagen:'assets/mouse1.jpeg',
-    descripcion:'LO MEJOR EN MOUSE',
+    nomAct:'Introducción a ROS y PENCV',
+    imagen:'assets/ROS.jpeg',
+    descripcion:'Dr. Noé Velázquez López',
+    escuela:"Universidad Autónoma Chapingo",
   },
   {
     id:'4',
-    nomProd:'PC',
-    imagen:'assets/audifonos1.jpg',
-    descripcion:'LO MEJOR EN AUDIFONOS',
+    nomAct:'Gathering information',
+    imagen:'assets/gathering.jpg',
+    descripcion:'Dr. Adolfo Meléndez Ramírez',
+    escuela:"Tecnológico de Estudios Superiores de Ecatepec",
+  },
+  {
+    id:'5',
+    nomAct:'Programación con Python: Nivel Básico',
+    imagen:'assets/python.jpg',
+    descripcion:'M. en A.D.N. Juan Manuel Stein Carrillo',
+    escuela:"Tecnológico de Estudios Superiores de Ecatepec",
+  },
+  {
+    id:'6',
+    nomAct:'Análisis Forense con Kali Linux',
+    imagen:'assets/kali.jpg',
+    descripcion:'Ing. Eduardo Antonio Rodríguez Rosado',
+    escuela:"Badak - Innovación y Desarrollo",
   },
   
 ]
   constructor() { }
+  gedActividad(){
+    return this.actividad;
+}
 }
