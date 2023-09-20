@@ -1,20 +1,105 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Mi Aplicación
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <!-- Contenido de la página de inicio -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="content">
+    <!-- Aquí puedes agregar el contenido principal de tu página de inicio -->
+    <p>Bienvenido a nuestra aplicación.</p>
   </div>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <!-- Título "Instituciones Participantes" -->
+    <ion-title>
+      Instituciones Participantes
+    </ion-title>
+    <!-- Scroll de imágenes con CSS -->
+    <div class="image-scroll">
+      <!-- Múltiples tarjetas con imágenes -->
+      <ion-card>
+        <ion-card-content>
+          <!-- Aqui va la url de la institucion participante
+          y en img el logo de la institucion extraido de assets -->
+          <a href="https://www.ipn.mx/" target="_blank">
+          <img src="../../assets/ipn logo.png" alt="Imagen 1">
+        </a>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <img src="../../assets/ipn logo.png" alt="Imagen 2">
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <img src="../../assets/ipn logo.png" alt="Imagen 3">
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <img src="../../assets/ipn logo.png" alt="Imagen 3">
+        </ion-card-content>
+      </ion-card>
+      
+    
+      
+      <!-- Agrega más imágenes aquí -->
+    </div>
+    <!-- Dirección de la sede -->
+    <ion-card>
+      <ion-card-header>
+        Dirección de la Sede
+      </ion-card-header>
+      <ion-card-content>
+        <p>Av. Tecnológico S/N, Col. Valle de Anáhuac,</p>
+        <p>Ecatepec de Morelos, Estado de México</p>
+        <p>Código Postal: 55210</p>
+      </ion-card-content>
+    </ion-card>
+
+     <!-- Mapa (imagen de mapa) -->
+     <ion-card>
+      <ion-card-header>
+        Mapa de la Sede
+      </ion-card-header>
+      <ion-card-content>
+        <!-- aqui es el link a google maps del tese -->
+        <a href="https://www.google.com/maps/place/TecNM+-+Tecnol%C3%B3gico+de+Estudios+Superiores+de+Ecatepec/@19.5117284,-99.0413864,17z/data=!4m6!3m5!1s0x85d1fa94a2bf91f9:0x700d93a5d515a259!8m2!3d19.5106769!4d-99.0406105!16s%2Fg%2F121xcx9l?hl=es&entry=ttu" target="_blank">
+        <img src="../../assets/mapa tese (2).jpeg" alt="Mapa de la Sede" width="300" height="200">
+      </a>
+      </ion-card-content>
+    </ion-card>
+  
+
+    <!-- Enlaces de contacto -->
+    <ion-button expand="full" fill="clear" routerLink="/contact">Contacto</ion-button>
+
+
+    <!-- Equipo organizador del evento -->
+    <ion-button expand="full" fill="clear" routerLink="/organization">Equipo Organizador</ion-button>
+  </ion-toolbar>
+
+
+  <!-- Redes sociales -->
+  <ion-row justify-content-center>
+    <ion-button shape="round" fill="clear" size="small" href="https://www.facebook.com/FamiliaTESE">
+      <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+    </ion-button>
+
+    <ion-button shape="round" fill="clear" size="small" href="https://youtube.com/channel/UC-QmepRifyoSZ3m4xeqUulQ">
+      <ion-icon slot="icon-only" name="logo-youtube"></ion-icon>
+    </ion-button>
+
+    
+  </ion-row>
+
+</ion-footer>
 </ion-content>

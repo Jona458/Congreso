@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+ion-footer {
+  ion-toolbar {
+    /* Tamaño y estilo del contenedor de scroll */
+    .image-scroll {
+      display: flex;
+      overflow-x: auto; /* Uso "auto" para que el scroll solo aparezca cuando sea necesario */
+      white-space: nowrap;
+    }
+
+    ion-card {
+      flex: 0 0 auto;
+      margin-right: 10px; /* Espacio entre imágenes */
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Equipo Organizador
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <!-- Loop a través de los profesores y crea una tarjeta para cada uno -->
+      <ion-col size="6" *ngFor="let profesor of profesores">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ profesor.nombre }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-img [src]="profesor.imagenUrl"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './home/contact/contact.component';
+import { OrganizationComponent } from './home/organization/organization.component';
+
 
 const routes: Routes = [
   {
@@ -11,6 +14,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },
+  {
+    path: 'organization',
+    component: OrganizationComponent,
+  },
+  
 ];
 
 @NgModule({
