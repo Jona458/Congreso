@@ -8,9 +8,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'programa',
     pathMatch: 'full'
   },
+  {
+    path: 'programa',
+    loadChildren: () => import('./programa/programa.module').then( m => m.ProgramaPageModule)
+  },
+
 ];
 
 @NgModule({
