@@ -9,6 +9,8 @@ import { TalleresPageRoutingModule } from './talleres-routing.module';
 import { TalleresPage } from './talleres.page';
 import { FotografiasComponent } from './fotografias/fotografias.component';
 import { AplicacionesComponent } from './aplicaciones/aplicaciones.component';
+import { IntegraiComponent } from './integrai/integrai.component';
+import { RosypencvComponent } from './rosypencv/rosypencv.component';
 
 @NgModule({
   imports: [
@@ -17,6 +19,6 @@ import { AplicacionesComponent } from './aplicaciones/aplicaciones.component';
     IonicModule,
     TalleresPageRoutingModule
   ],
-  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent,]
+  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent,IntegraiComponent]
 })
 export class TalleresPageModule {}
