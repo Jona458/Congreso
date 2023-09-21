@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'talleres',
+    redirectTo: 'talleres', //talleres
     pathMatch: 'full'
   },
   {
@@ -43,6 +43,16 @@ const routes: Routes = [
   { path: 'kali', component: KaliComponent},
   { path: 'kotlin', component: KotlinComponent},
   { path: 'clustering', component: ClusteringComponent},
+  {
+    path: 'conferencistas',
+    redirectTo: 'conferencistas',
+    pathMatch: 'full'
+  },
+  {
+    path: 'conferencistas',
+    loadChildren: () => import('./conferencistas/conferencistas.module').then( m => m.ConferencistasPageModule)
+  },
+
 
 ];
 
