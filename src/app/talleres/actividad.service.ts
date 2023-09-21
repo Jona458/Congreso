@@ -29,7 +29,6 @@ export class ActividadService {
     descripcion:'Dr. Noé Velázquez López',
     escuela:"Universidad Autónoma Chapingo",
     enlace: "/rosypencv",
-  
   },
   {
     id:'4',
@@ -37,6 +36,7 @@ export class ActividadService {
     imagen:'assets/gathering.jpg',
     descripcion:'Dr. Adolfo Meléndez Ramírez',
     escuela:"Tecnológico de Estudios Superiores de Ecatepec",
+    enlace: "/gathering",
   },
   {
     id:'5',
@@ -44,6 +44,7 @@ export class ActividadService {
     imagen:'assets/python.jpg',
     descripcion:'M. en A.D.N. Juan Manuel Stein Carrillo',
     escuela:"Tecnológico de Estudios Superiores de Ecatepec",
+    enlace: "/python",
   },
   {
     id:'6',
@@ -51,6 +52,23 @@ export class ActividadService {
     imagen:'assets/kali.jpg',
     descripcion:'Ing. Eduardo Antonio Rodríguez Rosado',
     escuela:"Badak - Innovación y Desarrollo",
+    enlace: "/kali",
+  },
+  {
+    id:'7',
+    nomAct:'Introducción a la programación con kotlin',
+    imagen:'assets/kotlin.jpg',
+    descripcion:'L.I. José Alfredo Jiménez Meza',
+    escuela:"Instituto Tecnológico de Zitácuaro",
+    enlace: "/kotlin",
+  },
+  {
+    id:'7',
+    nomAct:'Análisis de Clustering para clasificación de clientes.',
+    imagen:'assets/analisis.jpg',
+    descripcion:'Dr. Francisco Jacob Ávila Camacho',
+    escuela:"Tecnológico de Estudios Superiores de Ecatepec",
+    enlace: "/clustering",
   },
   
 ]

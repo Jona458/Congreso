@@ -1,11 +1,16 @@
 <ion-grid>
   <ion-row justify-content-center align-items-center>
+    <ion-col size="12" class="ion-text-center"> <!-- Centramos el botón horizontalmente -->
+      <ion-button color="danger">TALLERES</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row justify-content-center align-items-center>
     <ion-col size="4" *ngFor="let i of actividades">
       <ion-card class="card">
         <div class="image-container">
           <img src="{{i.imagen}}" class="imagenes"/>
         </div>
-        <ion-card-header class="text-center"> <!-- Agregar clase "text-center" para centrar el contenido del encabezado -->
+        <ion-card-header class="text-center">
           <ion-card-title>{{i.nomAct}}</ion-card-title>
           <ion-card-subtitle>{{i.descripcion}}</ion-card-subtitle>
           <ion-card-subtitle>{{i.escuela}}</ion-card-subtitle>
