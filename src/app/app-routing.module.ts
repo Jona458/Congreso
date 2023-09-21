@@ -24,6 +24,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'programa',
+    redirectTo: 'programa',  
+    pathMatch: 'full'
+  },
+  {
+    path: 'conferencistas',
+    redirectTo: 'conferencistas', 
+    pathMatch: 'full'
+  },
+  {
     path: 'contact',
     component: ContactComponent,
   },
