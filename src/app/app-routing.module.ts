@@ -19,6 +19,11 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'footer',
+    redirectTo: 'home', //talleres //programa
+    pathMatch: 'full'
+  },
+  {
     path: '',
     redirectTo: 'talleres', //talleres //programa
     pathMatch: 'full'
