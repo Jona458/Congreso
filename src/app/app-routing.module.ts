@@ -8,9 +8,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'conferencistas',
     pathMatch: 'full'
   },
+  {
+    path: 'conferencistas',
+    loadChildren: () => import('./conferencistas/conferencistas.module').then( m => m.ConferencistasPageModule)
+  },
+
 ];
 
 @NgModule({
