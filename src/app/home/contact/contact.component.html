@@ -7,30 +7,33 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      Teléfono
-    </ion-card-header>
-    <ion-card-content>
-      {{ telefono }}
-    </ion-card-content>
-  </ion-card>
+<ion-item>
+  <ion-button slot="start"> Tel </ion-button>
+  <ion-label>01(55)50 00 23 00</ion-label>
+  
+</ion-item>
 
-  <ion-card>
-    <ion-card-header>
-      Dirección
-    </ion-card-header>
-    <ion-card-content>
-      {{ direccion }}
-    </ion-card-content>
-  </ion-card>
+<ion-item>
+  <ion-button slot="start">
+    Dirección
+    <ion-icon name="home" slot="end"></ion-icon>
+  </ion-button>
+  <ion-label>Av. Tecnológico S/N Col. Valle de Anáhuac, Ecatepec de Morelos, Estado de México</ion-label>
+  <ion-button>
+  </ion-button>
+</ion-item>
 
-  <ion-card>
-    <ion-card-header>
-      Código Postal
-    </ion-card-header>
-    <ion-card-content>
-      {{ codigoPostal }}
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+<ion-item>
+  <ion-button slot="start">
+    <ion-icon slot="icon-only" name="navigate"></ion-icon>
+  </ion-button>
+  <ion-label>C.P. 55210</ion-label>
+  <ion-button>
+  </ion-button>
+</ion-item>
+
+<ion-item>
+ 
+ 
+  <ion-button routerLink="/home" slot="end" size="default"> Regresar </ion-button>
+  
