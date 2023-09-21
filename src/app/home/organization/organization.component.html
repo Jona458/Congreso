@@ -1,25 +1,43 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Equipo Organizador
+      Doctores encargados. 
+
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid>
-    <ion-row>
-      <!-- Loop a través de los profesores y crea una tarjeta para cada uno -->
-      <ion-col size="6" *ngFor="let profesor of profesores">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>{{ profesor.nombre }}</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-img [src]="profesor.imagenUrl"></ion-img>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-content>
+  <ion-item>
+    <ion-avatar slot="start">
+      <a href="https://media.licdn.com/dms/image/C4E03AQHrVz_jLvS2NA/profile-displayphoto-shrink_800_800/0/1629440592100?e=2147483647&v=beta&t=UXKyFpX6TsQy3qj9prprhsdCtqe6CJc6CVEJDNpbbVk" target="_blank">
+      <img src="../../assets/dragriselda.jpg" />
+      </a>
+    </ion-avatar>
+    <ion-label> Dra. Griselda Cortes Barrera </ion-label>
+  </ion-item>
+  <ion-content>
+    <ion-item>
+      <ion-avatar slot="start">
+         <a href="https://media.licdn.com/dms/image/C4E03AQEx_CcBcY9kDg/profile-displayphoto-shrink_200_200/0/1636872956248?e=1700697600&v=beta&t=nw7aXHUajHcDfPRbDZg7q1_3TLwHEoMJOEUuscAdmX8" target="_blank">
+        <img src="../../assets/jacob.jpg" />
+      </a>
+      </ion-avatar>
+      <ion-label> Dr. Francisco Jacob Ávila Camacho </ion-label>
+    </ion-item>
+    <ion-content>
+      <ion-item>
+        <ion-avatar slot="start">
+          <a href="https://media.licdn.com/dms/image/C5603AQFeRWThF5RSyg/profile-displayphoto-shrink_200_200/0/1636168962168?e=1700697600&v=beta&t=hZRViQzMn_WKPRQv5zPQg5AAD7lPAFCCFd70e6iwa2o" target="_blank">
+          <img src="../../assets/leo.jpg" />
+        </a>
+        </ion-avatar>
+        <ion-label> Dr. Leonardo Miguel Moreno Villalba </ion-label>
+      </ion-item>
+
+
+  
+
+<ion-item>
+
+<ion-button routerLink="/home" slot="start" size="small"> Regresar </ion-button>
