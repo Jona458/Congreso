@@ -3,6 +3,15 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './home/contact/contact.component';
 import { OrganizationComponent } from './home/organization/organization.component';
 
+import { AplicacionesComponent } from './talleres/aplicaciones/aplicaciones.component';
+import { IntegraiComponent } from './talleres/integrai/integrai.component';
+import { RosypencvComponent } from './talleres/rosypencv/rosypencv.component';
+import { GatheringComponent } from './talleres/gathering/gathering.component';
+import { PythonComponent } from './talleres/python/python.component';
+import { KaliComponent } from './talleres/kali/kali.component';
+import { KotlinComponent } from './talleres/kotlin/kotlin.component';
+import { ClusteringComponent } from './talleres/clustering/clustering.component';
+
 
 const routes: Routes = [
   {
@@ -11,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'talleres',
     pathMatch: 'full'
   },
   {
@@ -22,7 +31,19 @@ const routes: Routes = [
     path: 'organization',
     component: OrganizationComponent,
   },
-  
+  {
+    path: 'talleres',
+    loadChildren: () => import('./talleres/talleres.module').then( m => m.TalleresPageModule)
+  },
+  { path: 'aplicaciones', component: AplicacionesComponent},
+  { path: 'integrai', component: IntegraiComponent},
+  { path: 'rosypencv', component: RosypencvComponent},
+  { path: 'gathering', component: GatheringComponent},
+  { path: 'python', component: PythonComponent},
+  { path: 'kali', component: KaliComponent},
+  { path: 'kotlin', component: KotlinComponent},
+  { path: 'clustering', component: ClusteringComponent},
+
 ];
 
 @NgModule({
