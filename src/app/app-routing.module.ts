@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'talleres', //talleres
+    redirectTo: 'talleres', //talleres //programa
     pathMatch: 'full'
   },
   {
@@ -53,6 +53,11 @@ const routes: Routes = [
     loadChildren: () => import('./conferencistas/conferencistas.module').then( m => m.ConferencistasPageModule)
   },
 
+
+  {
+    path: 'programa',
+    loadChildren: () => import('./programa/programa.module').then( m => m.ProgramaPageModule)
+  },
 
 ];
 
