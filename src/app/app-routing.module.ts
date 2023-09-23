@@ -8,11 +8,17 @@ import { PythonComponent } from './talleres/python/python.component';
 import { KaliComponent } from './talleres/kali/kali.component';
 import { KotlinComponent } from './talleres/kotlin/kotlin.component';
 import { ClusteringComponent } from './talleres/clustering/clustering.component';
+import { PrincipalComponent } from './home/principal/principal.component';
 
 const routes: Routes = [
+
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'principal',
+    component: PrincipalComponent,
   },
   {
     path: '',
