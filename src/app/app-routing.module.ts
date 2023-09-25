@@ -28,7 +28,11 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },  {
+    path: 'taller',
+    loadChildren: () => import('./taller/taller.module').then( m => m.TallerPageModule)
   }
+
   
 ];
 
