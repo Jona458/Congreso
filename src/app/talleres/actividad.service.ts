@@ -64,7 +64,7 @@ export class ActividadService {
   },
   {
     id:'8',
-    nomAct:'Análisis de Clustering para clasificación de clientes',
+    nomAct:'Análisis de Clustering',
     imagen:'assets/DR. FRANCISCO JACOB ÁVILA CAMACHO.jpg',
     descripcion:'Dr. Francisco Jacob Ávila Camacho',
     escuela:"Tecnológico de Estudios Superiores de Ecatepec",
