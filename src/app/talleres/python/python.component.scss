@@ -1,4 +1,10 @@
-.imagen {
-    width: 600px;
-    height: 400px;
-}
+.imagenes {
+    width: 50%; /* Ajusta el tamaño máximo de la imagen */
+    height:50%; /* Ajusta el tamaño máximo de la imagen */
+  }
+  .description {
+    text-align: justify;
+    font-size: 20px;
+    margin: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
