@@ -16,6 +16,7 @@ import { PythonComponent } from './python/python.component';
 import { KaliComponent } from './kali/kali.component';
 import { KotlinComponent } from './kotlin/kotlin.component';
 import { ClusteringComponent } from './clustering/clustering.component';
+import { NodeComponent } from './node/node.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,6 @@ import { ClusteringComponent } from './clustering/clustering.component';
     IonicModule,
     TalleresPageRoutingModule
   ],
-  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent,IntegraiComponent,RosypencvComponent, GatheringComponent,PythonComponent,KaliComponent,KotlinComponent,ClusteringComponent]
+  declarations: [TalleresPage,FotografiasComponent,AplicacionesComponent,IntegraiComponent,RosypencvComponent, GatheringComponent,PythonComponent,KaliComponent,KotlinComponent,ClusteringComponent,NodeComponent]
 })
 export class TalleresPageModule {}

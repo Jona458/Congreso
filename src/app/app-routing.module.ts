@@ -8,6 +8,7 @@ import { PythonComponent } from './talleres/python/python.component';
 import { KaliComponent } from './talleres/kali/kali.component';
 import { KotlinComponent } from './talleres/kotlin/kotlin.component';
 import { ClusteringComponent } from './talleres/clustering/clustering.component';
+import { NodeComponent } from './talleres/node/node.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,8 @@ const routes: Routes = [
   { path: 'kali', component: KaliComponent},
   { path: 'kotlin', component: KotlinComponent},
   { path: 'clustering', component: ClusteringComponent},
+  { path: 'node', component: NodeComponent},
+
 ];
 
 @NgModule({

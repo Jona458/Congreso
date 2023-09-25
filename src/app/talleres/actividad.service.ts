@@ -76,7 +76,7 @@ export class ActividadService {
     imagen:'assets/ING_LUIS_FERNANDO_FERNANDEZ_CRUZ.jpg',
     descripcion:'Ing. Luis Fernando Fernandez Cruz',
     escuela:"Badak",
-    enlace: "/clustering",
+    enlace: "/node",
   },
   
 ]
