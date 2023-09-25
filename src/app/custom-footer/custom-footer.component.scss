@@ -1,0 +1,22 @@
+.ion-content-scroll-host {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  /* Estilo para el pie de página */
+.footer {
+  background-color: #333; /* Cambia el color de fondo según tu preferencia */
+  color: #fff; /* Cambia el color del texto según tu preferencia */
+  padding: 20px; /* Ajusta el espacio interior según sea necesario */
+}
+
+/* Estilo para la barra de herramientas */
+.toolbar {
+  background-color: #fff; /* Cambia el color de fondo de la barra de herramientas según tu preferencia */
+  color: #fff; /* Cambia el color del texto en la barra de herramientas según tu preferencia */
+}

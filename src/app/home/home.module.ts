@@ -6,6 +6,11 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { PrincipalComponent } from './principal/principal.component';
+import { CustomFooterComponent } from '../custom-footer/custom-footer.component';
+import { InstitutionsComponent } from '../institutions/institutions.component';
+import { OrganizationComponent } from '../organization/organization.component';
+import { ContactComponent } from '../contact/contact.component';
+
 
 
 @NgModule({
@@ -15,6 +20,6 @@ import { PrincipalComponent } from './principal/principal.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent]
 })
 export class HomePageModule {}
