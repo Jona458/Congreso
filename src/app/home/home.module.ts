@@ -10,6 +10,14 @@ import { CustomFooterComponent } from '../custom-footer/custom-footer.component'
 import { InstitutionsComponent } from '../institutions/institutions.component';
 import { OrganizationComponent } from '../organization/organization.component';
 import { ContactComponent } from '../contact/contact.component';
+import { AplicacionesComponent } from '../talleristas/aplicaciones/aplicaciones.component';
+import { ClusterComponent } from '../talleristas/cluster/cluster.component';
+import { GatheringtecComponent } from '../talleristas/gatheringtec/gatheringtec.component';
+import { IntegrAiComponent } from '../talleristas/integr-ai/integr-ai.component';
+import { KaliComponent } from '../talleristas/kali/kali.component';
+import { KotlinComponent } from '../talleristas/kotlin/kotlin.component';
+import { PythonComponent } from '../talleristas/python/python.component';
+import { RosypencvComponent } from '../talleristas/rosypencv/rosypencv.component';
 
 
 
@@ -20,6 +28,6 @@ import { ContactComponent } from '../contact/contact.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,ClusterComponent,GatheringtecComponent,IntegrAiComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent]
 })
 export class HomePageModule {}
