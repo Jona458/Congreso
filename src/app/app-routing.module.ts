@@ -4,6 +4,7 @@ import { PrincipalComponent } from './home/principal/principal.component';
 import { InstitutionsComponent } from './institutions/institutions.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { ContactComponent } from './contact/contact.component';
+import { TalleristasComponent } from './talleristas/talleristas.component';
 
 const routes: Routes = [
 
@@ -28,9 +29,9 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-  },  {
-    path: 'taller',
-    loadChildren: () => import('./taller/taller.module').then( m => m.TallerPageModule)
+  },
+  {
+    path: 'talleristas', component: TalleristasComponent,
   }
 
   

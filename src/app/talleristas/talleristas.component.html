@@ -1,3 +1,50 @@
-<p>
-  talleristas works!
-</p>
+<ion-content>
+  <ion-header collapse="fade">
+    <ion-toolbar color="danger">
+      <ion-title>TESE</ion-title>
+      <ion-buttons slot="end">
+        <ion-searchbar></ion-searchbar>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-segment [scrollable]="true" value="heart">
+      <ion-segment-button routerLink="/home"value="home">
+        <ion-icon name="home" class="icon"></ion-icon>
+        <ion-text class="label">Inicio</ion-text>
+      </ion-segment-button>
+      <ion-segment-button routerLink="/login" value="person">
+        <ion-icon name="person"></ion-icon>
+        <ion-text class="label">Cuenta</ion-text>
+      </ion-segment-button>
+      <ion-segment-button routerLink="/instituciones" value="globe">
+        <ion-icon name="globe"></ion-icon>
+        <ion-text class="label">Instituciones</ion-text>
+      </ion-segment-button>
+      <ion-segment-button routerLink="/contacto" value="call">
+        <ion-icon name="call"></ion-icon>
+        <ion-text class="label">Contacto</ion-text>
+      </ion-segment-button>
+      <ion-segment-button routerLink="/actividades" value="barbell">
+        <ion-icon name="barbell"></ion-icon>
+        <ion-text class="label">Actividades</ion-text>
+      </ion-segment-button>
+    </ion-segment>
+    
+<app-fotos></app-fotos>  
+
+  <ion-footer class="ion-border">
+  </ion-footer>
+  <ion-toolbar>
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col class align="center">
+        <ion-card-title>CONTACTO:
+          Av. Tecnológico S/N C.P. 55210 Col. Valle de Anáhuac, Ecatepec de Morelos
+          Estado de México.
+          Teléfono: 01 (55) 50 00 23 00.
+        </ion-card-title>
+        ESTA PAGINA FUE CREADA POR ERICK OLGUIN GALICIA
+    </ion-col> 
+      <ion-col><img src="assets/piei.PNG" /></ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-toolbar>

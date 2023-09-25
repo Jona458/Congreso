@@ -18,6 +18,8 @@ import { KaliComponent } from '../talleristas/kali/kali.component';
 import { KotlinComponent } from '../talleristas/kotlin/kotlin.component';
 import { PythonComponent } from '../talleristas/python/python.component';
 import { RosypencvComponent } from '../talleristas/rosypencv/rosypencv.component';
+import { TalleristasComponent } from '../talleristas/talleristas.component';
+import { FotosComponent } from '../talleristas/fotos/fotos.component';
 
 
 
@@ -28,6 +30,6 @@ import { RosypencvComponent } from '../talleristas/rosypencv/rosypencv.component
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,ClusterComponent,GatheringtecComponent,IntegrAiComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,ClusterComponent,GatheringtecComponent,IntegrAiComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent]
 })
 export class HomePageModule {}
