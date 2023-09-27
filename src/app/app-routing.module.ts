@@ -5,6 +5,7 @@ import { InstitutionsComponent } from './institutions/institutions.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { ContactComponent } from './contact/contact.component';
 import { TalleristasComponent } from './talleristas/talleristas.component';
+import { ProgramComponent } from './home/program/program.component';
 
 const routes: Routes = [
 
@@ -32,6 +33,10 @@ const routes: Routes = [
   },
   {
     path: 'talleristas', component: TalleristasComponent,
+  },
+  {
+    path: 'program',
+    component: ProgramComponent,
   }
 
   

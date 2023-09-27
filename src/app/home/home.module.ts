@@ -20,6 +20,7 @@ import { PythonComponent } from '../talleristas/python/python.component';
 import { RosypencvComponent } from '../talleristas/rosypencv/rosypencv.component';
 import { TalleristasComponent } from '../talleristas/talleristas.component';
 import { FotosComponent } from '../talleristas/fotos/fotos.component';
+import { ProgramComponent } from './program/program.component';
 
 
 
@@ -30,6 +31,6 @@ import { FotosComponent } from '../talleristas/fotos/fotos.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,ClusterComponent,GatheringtecComponent,IntegrAiComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,ClusterComponent,GatheringtecComponent,IntegrAiComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent]
 })
 export class HomePageModule {}
