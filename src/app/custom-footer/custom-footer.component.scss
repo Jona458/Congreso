@@ -8,15 +8,16 @@
     overflow-y: auto;
   }
 
-  /* Estilo para el pie de página */
-.footer {
-  background-color: #333; /* Cambia el color de fondo según tu preferencia */
-  color: #fff; /* Cambia el color del texto según tu preferencia */
-  padding: 20px; /* Ajusta el espacio interior según sea necesario */
+#mapa{
+  margin-left: 63px;
+  //margin-bottom: 20px;
+  //margin-right: 25px;
+  margin: auto;
+  margin-top: 35px;
+  
+  //max-width: 30px;
 }
 
-/* Estilo para la barra de herramientas */
-.toolbar {
-  background-color: #fff; /* Cambia el color de fondo de la barra de herramientas según tu preferencia */
-  color: #fff; /* Cambia el color del texto en la barra de herramientas según tu preferencia */
+#footer{
+  background-color: greenyellow;
 }
