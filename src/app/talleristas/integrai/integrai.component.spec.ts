@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ClusterComponent } from './cluster.component';
+import { IntegraiComponent } from './integrai.component';
 
-describe('ClusterComponent', () => {
-  let component: ClusterComponent;
-  let fixture: ComponentFixture<ClusterComponent>;
+describe('IntegraiComponent', () => {
+  let component: IntegraiComponent;
+  let fixture: ComponentFixture<IntegraiComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClusterComponent ],
+      declarations: [ IntegraiComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ClusterComponent);
+    fixture = TestBed.createComponent(IntegraiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

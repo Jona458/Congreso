@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IdfotoService } from '../idfoto.service';
 
 @Component({
   selector: 'app-fotos',
@@ -6,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fotos.component.scss'],
 })
 export class FotosComponent  implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
-
+  actividades:any[] =[];
+  constructor(private serveactividad:IdfotoService) { }
+  ngOnInit() {
+    this.actividades= this.serveactividad.gedActividad();
+    console.log(this.actividades);
+  }
 }

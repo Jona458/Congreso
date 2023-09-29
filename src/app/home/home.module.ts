@@ -11,9 +11,6 @@ import { InstitutionsComponent } from '../institutions/institutions.component';
 import { OrganizationComponent } from '../organization/organization.component';
 import { ContactComponent } from '../contact/contact.component';
 import { AplicacionesComponent } from '../talleristas/aplicaciones/aplicaciones.component';
-import { ClusterComponent } from '../talleristas/cluster/cluster.component';
-import { GatheringtecComponent } from '../talleristas/gatheringtec/gatheringtec.component';
-import { IntegrAiComponent } from '../talleristas/integr-ai/integr-ai.component';
 import { KaliComponent } from '../talleristas/kali/kali.component';
 import { KotlinComponent } from '../talleristas/kotlin/kotlin.component';
 import { PythonComponent } from '../talleristas/python/python.component';
@@ -21,6 +18,10 @@ import { RosypencvComponent } from '../talleristas/rosypencv/rosypencv.component
 import { TalleristasComponent } from '../talleristas/talleristas.component';
 import { FotosComponent } from '../talleristas/fotos/fotos.component';
 import { ProgramComponent } from './program/program.component';
+import { IntegraiComponent } from '../talleristas/integrai/integrai.component';
+import { ClusteringComponent } from '../talleristas/clustering/clustering.component';
+import { GatheringgComponent } from '../talleristas/gatheringg/gatheringg.component';
+import { NodeComponent } from '../talleristas/node/node.component';
 
 
 
@@ -31,6 +32,6 @@ import { ProgramComponent } from './program/program.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,ClusterComponent,GatheringtecComponent,IntegrAiComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent,IntegraiComponent,ClusteringComponent,GatheringgComponent,NodeComponent]
 })
 export class HomePageModule {}

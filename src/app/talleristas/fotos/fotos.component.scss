@@ -1,0 +1,18 @@
+.imagenes {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    vertical-align: middle; /* Centra verticalmente */
+  }
+    .button-container {
+      display: flex;
+      justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
+      margin-top: 10px; /* Añade margen superior según tus necesidades */
+    }
+    .text-center {
+      text-align: center; /* Centrar el texto horizontalmente */
+    }
+    
+      
