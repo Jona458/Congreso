@@ -4,6 +4,18 @@ import { PrincipalComponent } from './home/principal/principal.component';
 import { InstitutionsComponent } from './institutions/institutions.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { ContactComponent } from './contact/contact.component';
+import { TalleristasComponent } from './talleristas/talleristas.component';
+import { ProgramComponent } from './home/program/program.component';
+import { AplicacionesComponent } from './talleristas/aplicaciones/aplicaciones.component';
+import { RosypencvComponent } from './talleristas/rosypencv/rosypencv.component';
+import { PythonComponent } from './talleristas/python/python.component';
+import { KaliComponent } from './talleristas/kali/kali.component';
+import { KotlinComponent } from './talleristas/kotlin/kotlin.component';
+import { NodeComponent } from './talleristas/node/node.component';
+import { IntegraiComponent } from './talleristas/integrai/integrai.component';
+import { GatheringgComponent } from './talleristas/gatheringg/gatheringg.component';
+import { ClusteringComponent } from './talleristas/clustering/clustering.component';
+import { ProgramprinComponent } from './program/programprin/programprin.component';
 
 const routes: Routes = [
 
@@ -28,7 +40,27 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-  }
+  },
+  {
+    path: 'talleristas', component: TalleristasComponent,
+  },
+  {
+    path: 'program',
+    component: ProgramComponent,
+  }, 
+  
+  { path: 'aplicaciones', component: AplicacionesComponent},
+  { path: 'integrai', component: IntegraiComponent},
+  { path: 'rosypencv', component: RosypencvComponent},
+  { path: 'gathering', component: GatheringgComponent},
+  { path: 'python', component: PythonComponent},
+  { path: 'kali', component: KaliComponent},
+  { path: 'kotlin', component: KotlinComponent},
+  { path: 'node', component: NodeComponent},
+  { path: 'clustering', component: ClusteringComponent},
+ 
+
+
   
 ];
 
