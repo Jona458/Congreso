@@ -1,13 +1,12 @@
+import { ProgenService } from './../progen.service';
 import { Component, OnInit } from '@angular/core';
-import { ProgenService } from 'src/app/program/progen.service';
 
 @Component({
-  selector: 'app-program',
-  templateUrl: './program.component.html',
-  styleUrls: ['./program.component.scss'],
+  selector: 'app-programprin',
+  templateUrl: './programprin.component.html',
+  styleUrls: ['./programprin.component.scss'],
 })
-export class ProgramComponent  implements OnInit {
-
+export class ProgramprinComponent  implements OnInit {
   progra:any [] = [];
   constructor(private servprog:ProgenService) { }
     ngOnInit() {

@@ -15,6 +15,7 @@ import { NodeComponent } from './talleristas/node/node.component';
 import { IntegraiComponent } from './talleristas/integrai/integrai.component';
 import { GatheringgComponent } from './talleristas/gatheringg/gatheringg.component';
 import { ClusteringComponent } from './talleristas/clustering/clustering.component';
+import { ProgramprinComponent } from './program/programprin/programprin.component';
 
 const routes: Routes = [
 
@@ -47,6 +48,7 @@ const routes: Routes = [
     path: 'program',
     component: ProgramComponent,
   }, 
+  
   { path: 'aplicaciones', component: AplicacionesComponent},
   { path: 'integrai', component: IntegraiComponent},
   { path: 'rosypencv', component: RosypencvComponent},
@@ -56,6 +58,8 @@ const routes: Routes = [
   { path: 'kotlin', component: KotlinComponent},
   { path: 'node', component: NodeComponent},
   { path: 'clustering', component: ClusteringComponent},
+ 
+
 
   
 ];
