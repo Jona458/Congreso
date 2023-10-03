@@ -48,4 +48,19 @@
     </ion-grid>
     
   </ion-toolbar>
+  <ion-card *ngFor="let i of institutions">
+
+    <ion-card-content>
+
+      <h3 style="text-align: center; margin-bottom: 30px; color: white; font-weight: bold; font-size: 15PX; text-decoration: none; font-style: italic;">{{i.nameInstitution}}</h3>
+
+      <a href="{{i.link}}" target="_blank">
+
+      <img style="width: 200px; height: 200px; margin-left: 100px;" src="{{i.ruta}}" alt="Imagen 1">
+
+    </a>
+
+    </ion-card-content>
+
+  </ion-card>    
 </ion-footer>
