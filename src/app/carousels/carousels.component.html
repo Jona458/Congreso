@@ -1,0 +1,5 @@
+<ion-slides pager="true">
+  <ion-slide *ngFor="let item of carouselItems">
+    <img [src]="item.imageUrl" (click)="openLink(item.linkUrl)" />
+  </ion-slide>
+</ion-slides>

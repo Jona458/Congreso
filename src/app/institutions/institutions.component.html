@@ -1,0 +1,240 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid id="grid">
+      <ion-row >
+        <ion-col size="10">
+          <ion-menu contentId="main-content">
+          </ion-menu>
+          <div class="ion-page" id="main-content">
+            <ion-header>
+              <ion-toolbar id="menu">
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <h1><ion-title>Menu</ion-title></h1>
+              </ion-toolbar>
+            </ion-header>
+          </div>
+        </ion-col>
+        <ion-col size="2" ><ion-searchbar id="nav"></ion-searchbar></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <h1><ion-title>Contenido Menu</ion-title></h1>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label routerLink="/access">Registro</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/institutions">Instituciones participantes</ion-label>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label routerLink="/contact">Contacto</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/program">Programa General</ion-label>
+      </ion-item>
+      <ion-item color="dark">
+        <h1><ion-label>Actividades</ion-label></h1>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/conferencias">Conferencias Magistrales</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/talleres">Talleres</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/ponencias">Ponencias (Oral y Poster)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/cursos">Concurso de Programación de Algoritmos aplicados a la
+          Ciberseguridad</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/torneo">Torneo de Robótica (Mega sumo telecontrolado, Mini sumo autónomo y Velocistas
+          (seguidor de línea))</ion-label>
+      </ion-item>
+    </ion-list>
+    
+  </ion-content>
+</ion-menu>
+
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="http://www.tese.edu.mx/tese2010/" target="_blank">
+              <img src="../../assets/tese.jpg" />
+            </a>
+          </ion-avatar>
+          <ion-label>TESE</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.tecnm.mx/" target="_blank">
+              <img src="../../assets/tec.png" />
+            </a>
+          </ion-avatar>
+          <ion-label>TECNNM</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.teschi.edu.mx/" target="_blank">
+              <img src="../../assets/teschi.png" />
+            </a>
+          </ion-avatar>
+          <ion-label>TESCHI</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="http://www.tecnologicodecoacalco.edu.mx/TESCO/INICIO/INICIO.php" target="_blank">
+              <img src="../../assets/tesco.webp" />
+            </a>
+          </ion-avatar>
+          <ion-label>TESCO</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.altillo.com/universidades/mexico/de/michoacan/Instituto_Tecnologico_de_Zitacuaro.asp" target="_blank">
+              <img src="../../assets/zita.png" />
+            </a>
+          </ion-avatar>
+          <ion-label>INSTITUTO TECNOLÓGICO DE ZITACUARO</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.usbbog.edu.co/" target="_blank">
+              <img src="../../assets/san buenaventura.png" />
+            </a>
+          </ion-avatar>
+          <ion-label>UNIVERSIDAD DE SAN BUENAVENTURA</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.ipn.mx/" target="_blank">
+              <img src="../../assets/ipn logo.png" />
+            </a>
+          </ion-avatar>
+          <ion-label>IPN</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.odoo.com/es_ES" target="_blank">
+              <img src="../../assets/ODOO.webp" />
+            </a>
+          </ion-avatar>
+          <ion-label>ODOO</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://badak.mx/" target="_blank">
+              <img src="../../assets/badak.png" />
+            </a>
+          </ion-avatar>
+          <ion-label>BADAK</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://chapingo.mx/" target="_blank">
+              <img src="../../assets/CHAPINGO.webp" />
+            </a>
+          </ion-avatar>
+          <ion-label>UNIVERSIDAD DE CHAPINGO</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.mirai-innovation-lab.com/" target="_blank">
+              <img src="../../assets/mirai.webp" />
+            </a>
+          </ion-avatar>
+          <ion-label>MIRAI INNOVATION RESEARCH INSTITUTE JAPAN</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.tamagawa.jp/en/" target="_blank">
+              <img src="../../assets/tamagawa.jpg" />
+            </a>
+          </ion-avatar>
+          <ion-label>TAMAGAWA UNIVERSITY</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-col-custom">
+        <ion-item>
+          <ion-avatar slot="start">
+            <a href="https://www.ndsco.com.au/" target="_blank">
+              <img src="../../assets/NDS.webp" />
+            </a>
+          </ion-avatar>
+          <ion-label>NDS COGNITIVE LABS</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <!-- Continúa con más filas y columnas según sea necesario -->
+
+  </ion-grid>
+  <ion-footer>
+  <ion-toolbar>
+     <app-custom-footer></app-custom-footer>
+  </ion-toolbar>
+</ion-footer>
+</ion-content>
+
+<style>
+  .ion-col-custom {
+    text-align: center;
+    height: 100px;
+
+  }
+
+  .ion-col-custom ion-avatar img {
+    max-width: 150px;
+    max-height: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  }
+  .ion-label {
+    text-align: center; /* Centra el texto dentro de ion-label */
+    font-family: "Poppins", sans-serif; /* Reemplaza "NombreDeTuTipoDeLetra" con el nombre del tipo de letra que desees */
+    font-size: 18px; /* Ajusta el tamaño de fuente según sea necesario */
+    /* Otros estilos de texto como color, peso, etc. */
+  }
+</style>
+
+
