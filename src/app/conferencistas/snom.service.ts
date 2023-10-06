@@ -76,3 +76,4 @@ historial1: 'Egresado en 2010 del Tecnológico de Monterrey en la carrera de Ing
       return this.conf2  
   }
 }
+/*Velázquez Galván Aldair*/
