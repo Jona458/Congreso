@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class IdfotoService {
   actividad=[
     {
-      id:'1',
+      id:1,
       nomAct:'Aplicaciones de sensores en Robótica',
       imagen:'assets/ING_JUAN_FRANCISCO_MELENDEZ_ELIZALDE.jpg',
       descripcion:'Mtro. Juan Francisco Meléndez Elizalde',
@@ -14,7 +14,7 @@ export class IdfotoService {
       enlace: "/aplicaciones",
   },
   {
-    id:'2', 
+    id:2, 
     nomAct:'IntegrAI Nexus',
     imagen:'assets/M_EN_I_S_C_RUBÉN_RAYA_DELGADO.jpg',
     descripcion:'M. en I.S.C. Rubén Raya Delgado NDS Cognitive Labs',
@@ -22,7 +22,7 @@ export class IdfotoService {
     enlace: "/integrai",
   },
   {
-    id:'3',
+    id:3,
     nomAct:'Introducción a ROS y OPENCV',
     imagen:'assets/DR_NOÉ_VELÁZQUEZ_LÓPEZ.jpg',
     descripcion:'Dr. Noé Velázquez López',
@@ -30,7 +30,7 @@ export class IdfotoService {
     enlace: "/rosypencv",
   },
   {
-    id:'4',
+    id:4,
     nomAct:'Gathering information',
     imagen:'assets/DR_ADOLFO_MELÉNDEZ_RAMÍREZ.jpg',
     descripcion:'Dr. Adolfo Meléndez Ramírez',
@@ -38,7 +38,7 @@ export class IdfotoService {
     enlace: "/gathering",
   },
   {
-    id:'5',
+    id:5,
     nomAct:'Programación con Python: Nivel Básico',
     imagen:'assets/M_EN A.D.N. JUAN MANUEL STEIN CARRILLO.png',
     descripcion:'M. en A.D.N. Juan Manuel Stein Carrillo',
@@ -46,7 +46,7 @@ export class IdfotoService {
     enlace: "/python",
   },
   {
-    id:'6',
+    id:6,
     nomAct:'Análisis Forense con Kali Linux',
     imagen:'assets/Dr. EMMANUEL TONATIHU_JUAREZ_VELAZQUEZ.jpeg',
     descripcion:'Dr. Emmanuel Tonatihu Juárez Velázquez',
@@ -54,7 +54,7 @@ export class IdfotoService {
     enlace: "/kali",
   },
   {
-    id:'7',
+    id:7,
     nomAct:'Introducción a la programación con kotlin',
     imagen:'assets/L.I. JOSÉ ALFREDO JIMÉNEZ MEZA.jpg',
     descripcion:'L.I. José Alfredo Jiménez Meza',
@@ -62,7 +62,7 @@ export class IdfotoService {
     enlace: "/kotlin",
   },
   {
-    id:'8',
+    id:8,
     nomAct:'Análisis de Clustering',
     imagen:'assets/DR. FRANCISCO JACOB ÁVILA CAMACHO.jpg',
     descripcion:'Dr. Francisco Jacob Ávila Camacho',
@@ -70,7 +70,7 @@ export class IdfotoService {
     enlace: "/clustering",
   },
   {
-    id:'9',
+    id:9,
     nomAct:'Node.Js y Cohere: Sentiment Analysis',
     imagen:'assets/ING_LUIS_FERNANDO_FERNANDEZ_CRUZ.jpg',
     descripcion:'Ing. Luis Fernando Fernandez Cruz',
@@ -83,4 +83,8 @@ export class IdfotoService {
   gedActividad(){
     return this.actividad;
 }
+  gedfotoid(id:number){
+    //let i=parseInt(id);
+    return this.actividad[id];
+  }
 }

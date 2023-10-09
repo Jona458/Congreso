@@ -15,6 +15,7 @@ import { NodeComponent } from './talleristas/node/node.component';
 import { IntegraiComponent } from './talleristas/integrai/integrai.component';
 import { GatheringgComponent } from './talleristas/gatheringg/gatheringg.component';
 import { ClusteringComponent } from './talleristas/clustering/clustering.component';
+import { DetallesComponent } from './talleristas/fotos/detalles/detalles.component';
 
 const routes: Routes = [
 
@@ -44,6 +45,9 @@ const routes: Routes = [
     path: 'talleristas', component: TalleristasComponent,
   },
   {
+    path: 'talleristas/:id', component: DetallesComponent,
+  },
+  {
     path: 'program',
     component: ProgramComponent,
   }, 
@@ -55,7 +59,15 @@ const routes: Routes = [
   { path: 'kali', component: KaliComponent},
   { path: 'kotlin', component: KotlinComponent},
   { path: 'node', component: NodeComponent},
-  { path: 'clustering', component: ClusteringComponent},
+  { path: 'clustering', component: ClusteringComponent},  {
+    path: 'pagina1',
+    loadChildren: () => import('./pagina1/pagina1.module').then( m => m.Pagina1PageModule)
+  },
+  {
+    path: 'pagina2',
+    loadChildren: () => import('./pagina2/pagina2.module').then( m => m.Pagina2PageModule)
+  },
+
 
   
 ];

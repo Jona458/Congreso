@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private ruta:Router) { }
 
   ngOnInit() {}
-
+  llamarp1(){
+    this.ruta.navigate(['pagina1'])
+  };
+  llamarp2(){
+    this.ruta.navigate(['pagina2'])
+  };
 }

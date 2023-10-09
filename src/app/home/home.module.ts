@@ -22,6 +22,7 @@ import { IntegraiComponent } from '../talleristas/integrai/integrai.component';
 import { ClusteringComponent } from '../talleristas/clustering/clustering.component';
 import { GatheringgComponent } from '../talleristas/gatheringg/gatheringg.component';
 import { NodeComponent } from '../talleristas/node/node.component';
+import { DetallesComponent } from '../talleristas/fotos/detalles/detalles.component';
 
 
 
@@ -32,6 +33,6 @@ import { NodeComponent } from '../talleristas/node/node.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent,IntegraiComponent,ClusteringComponent,GatheringgComponent,NodeComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent,IntegraiComponent,ClusteringComponent,GatheringgComponent,NodeComponent,DetallesComponent]
 })
 export class HomePageModule {}
