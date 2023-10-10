@@ -40,9 +40,8 @@
       <ion-item>
         <ion-label routerLink="/contact">Contacto</ion-label>
       </ion-item>
-
-      <ion-item>
-        <ion-label routerLink="/program">Programa General</ion-label>
+      <ion-item routerLink="/program">
+        <ion-label>Programa General</ion-label>
       </ion-item>
       <ion-item color="dark">
         <h1><ion-label>Actividades</ion-label></h1>
@@ -69,497 +68,32 @@
   </ion-content>
 </ion-menu>
 
-
 <ion-content>
   <ion-card>
     <ion-img src="/assets/amr.jpeg"></ion-img>
 </ion-card>
   <ion-card>
-    <ion-card-title>Jueves 28 de Septiembre 2023.</ion-card-title>
   <ion-grid fixed>
     <ion-row>
-      <ion-col size="4">
+      <ion-col size="4" *ngFor="let i of progra">
+        <ion-card-title>{{i.tarj}}</ion-card-title>
         <ion-card>
-          <ion-img src="/assets/maest.jpg"></ion-img>
+          <ion-img src="{{i.foto}}"></ion-img>
           <ion-card-header>
-            <ion-card-title>INAGURACIÓN.</ion-card-title>
-            <ion-icon name="rocket-outline"></ion-icon>
-            <br>
-            <ion-icon name="people"></ion-icon>
+            <ion-card-title>{{i.titulo}}</ion-card-title>
             <ion-text color="danger">
               <h6>
-                De 10:00 am a 10:30 am
+                {{i.horario}}
           </h6>
           </ion-text>
             <ion-card-content>
-              Sera impartida por el personal administrativo del T.E.S.E. el cual está conformado por educadores, directivos docentes y administradores escolares,deberan participar en el diseño, ejecución y evaluación del Proyecto Educativo Institucional.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/robotica.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>CONFERENCIA MAGISTRAL UNA INTRODUCCIÓN A LOS ROBOTS DE SERVICIO DE PROPÓSITO GENERAL</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 10:45 am a 11:35 am
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartida por el DR. LUIS ANGEL CONTRERAS TOLEDO.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/sensoresrob.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER-APLICACIONES DE SENSORES EN ROBÓTICA.</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 6:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el MTRO. JUAN FRANCISCO MELÉNDEZ ELIZALDE.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card>
-          <ion-img src="/assets/nexus.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER-INTEGRAL NEXUS: DESENCADENANDO LA INNOVACIÓN CON IA GENERATIVA.</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 6:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el M. EN I.S.C. RUBÉN RAYA DELGADO.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card>
-          <ion-img src="/assets/introduccion.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER-INTRODUCCIÓN A ROS Y OPENCV</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 6:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el DR. NOÉ VELÁZQUEZ LÓPEZ.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card>
-          <ion-img src="/assets/robotica.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER-GATHERING INFORMATION</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 6:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el DR. ADOLFO MELÉNDEZ RAMÍREZ.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card>
-          <ion-img src="/assets/python.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER-PROGRAMACIÓN CON PYTHON: NIVEL BÁSICO</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 6:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el M. EN A.D.N. JUAN MANUEL STEIN CARRILLO.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/kotlin.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER-INTRODUCCIÓN A LA PROGRAMACIÓN CON KOTLIN</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 6:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el L.I. JOSÉ ALFREDO JIMÉNEZ MEZA.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/clustering.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER ANÁLISIS DE CLUSTERING PARA CLASIFICACIÓN DE CLIENTES</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 06:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el DR. FRANCISCO JACOB ÁVILA CAMACHO.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/kali.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER HERRAMIENTAS DE CYBERSEGURIDAD CON KALI LINUX</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 12:00 pm a 06:00 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el DR. EMMANUEL TONATIHU JUÁREZ VELÁZQUEZ.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/ai.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>CONFERENCIA MAGISTRAL-LA CIENCIA DE DATOS UTILIZA Y APROVECHA LA INTELIGENCIA ARTIFICIAL</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 11:50 am a 12:40 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartida por el DR. ADOLFO GUZMÁN ARENAS.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/chatgpt.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>TALLER TURING, CHATGPT Y LAS PROMESAS DE LA INTELIGENCIA ARTIFICIAL</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 01:15 pm a 02:05 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartido por el DR. LUIS ALBERTO PINEDA CORTÉS.
-            </ion-card-content>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card>
-          <ion-img src="/assets/neurotec.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>CONFERENCIA NEUROTECHNOLOGÍA DEL FUTURO Y EL HUMANO 2.0</ion-card-title>
-            <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-            <ion-text color="danger">
-              <h6>
-                De 04:00 pm a 04:50 pm
-          </h6>
-          </ion-text>
-            <ion-card-content>
-              Impartida por el DR. CHRISTIAN ISAAC PEÑALOZA.
+              {{i.descrip}}
             </ion-card-content>
           </ion-card-header>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
-</ion-card>
-<ion-card>
-  <ion-card-title>Viernes 29 de Septiembre 2023.</ion-card-title>
-<ion-grid fixed>
-  <ion-row>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/analitica.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>CONFERENCIA MAGISTRAL DONDE ESTÁN LOS DATOS PARA TRABAJAR PROCESOS DE ANALÍTICA.</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 09:00 am a 09:50 am
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por la DRA. ALEJANDRA CATHERINE MONTAÑA ACEVEDO.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/proyects.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>PRESENTACIÓN DE PROYECTOS</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="newspaper"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 04:00 pm a 06:00 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por los estudiantes de nivel superior y posgrado, los cuales daran a conocer los desarrollos de sus trabajos de tesis, residencias profesionales e investigación.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/endpoint.webp"></ion-img>
-        <ion-card-header>
-          <ion-card-title>TALLER IA ATAQUE DE LOS ENDPOINTS</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 11:10 am a 12:00 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartido por el MSC. JOHNN EDUARD CRIOLLO SALAMANCA.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/cyber.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>CONCURSO DE PROGRAMACIÓN DE ALGORITMOS APLICADOS A LA CIBERSEGURIDAD</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="terminal"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 10:00 am a 02:00 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartido por los estudiantes de cada una de las diferentes instituciones participantes.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/ciberseg.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>CONFERENCIA SEGURIDAD INFORMÁTICA: LA IMPORTANCIA EN LAS EMPRESAS</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 03:00 pm a 03:50 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por el ING. EDUARDO ANTONIO RODRÍGUEZ ROSADO.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/desmi.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>DESMITIFICANDO LA INTELIGENCIA ARTIFICIAL: SEPARANDO LA REALIDAD DE LA FICCIÓN</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 12:30 pm a 01:30 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por el ING. HUGO GARCÍA FLORES.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/ins.jpeg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>EXPOSICIÓN DE POSTERS</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 04:00 pm a 05:30 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por los estudiantes que tengan la oportunidad de comunicar a la comunidad la forma en que desarrollan proyectos que dan solución a problemas planeados en sus ámbitos de convivencia.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="3">
-      <ion-card>
-        <ion-img src="/assets/eval.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>EVALUACIÓN DE PONENCIAS</ion-card-title>
-          <ion-icon name="create"></ion-icon>
-          <br>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 06:00 pm a 06:30 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por los estudiantes participantes y el personal institucional.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-</ion-grid>
-</ion-card>
-<ion-card>
-  <ion-card-title>Sabado 30 de Septiembre 2023.</ion-card-title>
-<ion-grid fixed>
-  <ion-row>
-    <ion-col size="4">
-      <ion-card>
-        <ion-img src="/assets/xr.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>CONFERENCIA HUMANOS EN EL LAZO: XR, ROBÓTICA E IA.</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 09:00 am a 09:50 am
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por el DR. WALTERIO MAYOL CUEVAS.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-        <ion-img src="/assets/concurso.jpg"></ion-img>
-        <ion-card-header>
-          <ion-card-title>TORNEO DE ROBOTS</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="game-controller"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 10:00 am a 01:00 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartido por el personal administrativo y esta conformado por educadores, directivos docentes y administradores escolares, para su evaluación.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-        <ion-img src="/assets/prem.png"></ion-img>
-        <ion-card-header>
-          <ion-card-title>PREMIACIÓN Y CLAUSURA</ion-card-title>
-          <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="trophy"></ion-icon>
-          <br>
-          <ion-icon name="ribbon"></ion-icon>
-          <ion-text color="danger">
-            <h6>
-              De 01:00 pm a 02:00 pm
-        </h6>
-        </ion-text>
-          <ion-card-content>
-            Impartida por personal administrativo y personal docente de las instituciones.
-          </ion-card-content>
-        </ion-card-header>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-</ion-grid>
 </ion-card>
 <ion-card>
   <ion-card-title>REGISTRO</ion-card-title>
@@ -571,10 +105,6 @@
         <ion-card-header>
           <ion-card-title>ESCANEAME</ion-card-title>
           <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="phone-portrait"></ion-icon>
-          <br>
-          <ion-icon name="camera"></ion-icon>
         </ion-card-header>
       </ion-card>
     </ion-col>
@@ -584,14 +114,6 @@
         <ion-card-header>
           <ion-card-title> </ion-card-title>
           <ion-icon name="people"></ion-icon>
-          <br>
-          <ion-icon name="desktop"></ion-icon>
-          <br>
-          <ion-icon name="terminal"></ion-icon>
-          <br>
-          <ion-icon name="construct"></ion-icon>
-          <br>
-          <ion-icon name="hardware-chip"></ion-icon>
         </ion-card-header>
       </ion-card>
     </ion-col>
