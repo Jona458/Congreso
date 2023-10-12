@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./principal.component.scss'],
 })
 export class PrincipalComponent  implements OnInit {
+  bandera=true;
 
   constructor(private ruta:Router) { }
 
@@ -17,4 +18,18 @@ export class PrincipalComponent  implements OnInit {
   llamarp2(){
     this.ruta.navigate(['pagina2'])
   };
+  llamarregistrotall(){
+    this.ruta.navigate(['registrotall'])
+  };
+  aparecerDesaparecer(){
+    if(this.bandera){
+      this.bandera=false;
+
+    }else{
+      this.bandera=true;
+
+    }
+    
+  };
+  
 }
