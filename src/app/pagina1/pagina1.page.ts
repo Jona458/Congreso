@@ -30,7 +30,8 @@ export class Pagina1Page implements OnInit {
     }); */
   }
   guardar(){
-    console.log('hola')
-    this.bandera=false;
+    //console.log('hola')
+    //this.bandera=false;
+    console.log(this.registra.value.Email)
   };
 }
