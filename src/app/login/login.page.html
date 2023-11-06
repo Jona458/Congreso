@@ -1,0 +1,146 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-grid id="grid">
+        <ion-row >
+          <ion-col size="10">
+            <ion-menu contentId="main-content">
+            </ion-menu>
+            <div class="ion-page" id="main-content">
+              <ion-header>
+                <ion-toolbar id="menu">
+                  <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                  </ion-buttons>
+                  <h1><ion-title>Menu</ion-title></h1>
+                </ion-toolbar>
+              </ion-header>
+            </div>
+          </ion-col>
+          <ion-col size="1" >
+            <ion-button (click)="aparecerDesaparecer()">
+              <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="1">
+            <ion-item *ngIf="bandera">
+              <ion-input placeholder="Buscar"></ion-input>
+            </ion-item>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-menu side="start" contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <h1><ion-title>Contenido Menu</ion-title></h1>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-label routerLink="/access">Registro</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label routerLink="/institutions">Instituciones participantes</ion-label>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label routerLink="/contact">Contacto</ion-label>
+        </ion-item>
+        <ion-item routerLink="/program">
+          <ion-label>Programa General</ion-label>
+        </ion-item>
+        <ion-item color="dark">
+          <h1><ion-label>Actividades</ion-label></h1>
+        </ion-item>
+        <ion-item>
+          <ion-label routerLink="/conferencias">Conferencias Magistrales</ion-label>
+        </ion-item>
+        <ion-item routerLink="/talleristas">
+          <ion-label>Talleres</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label routerLink="/ponencias">Ponencias (Oral y Poster)</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label routerLink="/cursos">Concurso de Programación de Algoritmos aplicados a la
+            Ciberseguridad</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label routerLink="/torneo">Torneo de Robótica (Mega sumo telecontrolado, Mini sumo autónomo y Velocistas
+            (seguidor de línea))</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label routerLink="/pagina1">Pagina 1</ion-label>
+        </ion-item>
+        <ion-item routerLink="/pagina2">
+          <ion-label>Pagina 2</ion-label>
+        </ion-item>
+        <ion-item routerLink="/registrotall">
+          <ion-label>Registro talleres</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-grid>
+      <ion-row>
+    <ion-col></ion-col>
+    <ion-col>
+  <form [formGroup]="registra">
+    <ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-col>
+          <div class="ion-text-center">
+          <h1>Login</h1>
+          </div>
+          </ion-col>
+        </ion-item>
+        <!-- <ion-item>
+          <ion-icon slot="start" name="person-circle-sharp"></ion-icon>
+          <ion-input label="Nombre" placeholder="Ingrese su nombre" formControlName="Nombre"></ion-input>
+        </ion-item> -->
+        <!--<ion-item>
+          <ion-label *ngIf="bandera">Dato requerido</ion-label>
+        </ion-item> -->
+          <ion-item>
+            <ion-icon slot="start" name="id-card-sharp"></ion-icon>
+              <ion-label>Correo</ion-label>
+                <ion-input type="email" formControlName="Correo" pattern=".+@tese.edu.mx" placeholder="Ingrese su correo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon slot="start" name="key-sharp"></ion-icon>
+              <ion-label>Password</ion-label>
+                <ion-input type="password" placeholder="Ingrese su contraseña" value="password" formControlName="Password"></ion-input>
+          </ion-item>  
+        <!-- <ion-item>
+          <ion-icon slot="start" name="mail-sharp"></ion-icon>
+          <ion-input label="Email" type="email" placeholder="Ingrese su correo" formControlName="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="call-sharp"></ion-icon>
+          <ion-input label="Telefono" type="tel" placeholder="Ingrese su telefono" formControlName="Telefono"></ion-input>
+        </ion-item> -->
+        <ion-button (click)="ingresar()" id="present-alert" expand="block" shape="round">Ingresar</ion-button>
+        <ion-alert
+        trigger="present-alert"
+        header="Ha ingresado con éxito"
+        [buttons]="alertButtons">
+        </ion-alert>
+      </ion-list>
+    </ion-list>
+   </form>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content>
