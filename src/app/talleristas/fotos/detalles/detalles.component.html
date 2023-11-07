@@ -1,15 +1,28 @@
-<ion-card class="card">
-  <div class="image-container">
-    <img src="{{detalleid.imagen}}" class="imagenes"/>
-  </div>
-  <ion-card-header class="text-center">
-    <ion-card-title>{{detalleid.nomAct}}</ion-card-title>
-    <ion-card-subtitle>{{detalleid.descripcion}}</ion-card-subtitle>
-    <ion-card-subtitle>{{detalleid.escuela}}</ion-card-subtitle>
-  </ion-card-header>
-  <div class="button-container">
-    <a [routerLink]="['/talleristas/',detalleid.id]" routerDirection="forward">
-      <ion-button color="success">Ver más</ion-button>
-    </a>
-  </div>
-</ion-card>
+<app-program></app-program>
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center content-container">
+  <ion-button class="color1" class="segment-button" routerLink="/talleristas">Regresar</ion-button>
+  <h1 class="description1">{{detalleid.titulo}}</h1>
+  <img src="{{detalleid.imagen}}" class="imagenes"/>
+  <p class="description">{{detalleid.descripcion1}}</p>
+  <p class="description">{{detalleid.descripcion2}}</p>
+  <p class="description">{{detalleid.descripcion3}}</p>
+  <p class="description">{{detalleid.descripcion4}}</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button class="color1" [routerLink]="detalleid.enlace1" routerDirection="forward" class="segment-button">
+          {{detalleid.anterior}}
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="color1" href="http://cipieityr2023.tese.edu.mx/ccyt_conferencias/modulo_usuario/vista_evento_gen.aspx?id_evento=117" routerDirection="forward" class="segment-button">
+          Ir al Congreso
+        </ion-button>
+      </ion-col>
+      <ion-col> 
+        <ion-button class="color1" [routerLink]="detalleid.enlace2" routerDirection="forward" class="segment-button">
+          {{detalleid.siguiente}}
+        </ion-button>      
+      </ion-col>
+    </ion-row>
+  </ion-grid>

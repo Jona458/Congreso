@@ -1,0 +1,28 @@
+<ion-grid>
+  <ion-row justify-content-center align-items-center>
+    <ion-col size="12" class="ion-text-center"> <!-- Centramos el botón horizontalmente -->
+      <ion-button class="color1" class="segment-button">CONFERENCISTAS</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row justify-content-center align-items-center>
+    <ion-col size="4" *ngFor="let i of accion">
+      <ion-card class="card">
+        <div class="image-container">
+          <img src="{{i.imagen}}" class="imagenes"/>
+        </div>
+        <ion-card-header class="text-center">
+          <ion-card-title class="descripcion1">{{i.nomAct}}</ion-card-title>
+          <ion-card-subtitle class="descripcion">{{i.descripcion}}</ion-card-subtitle>
+          <ion-card-subtitle class="descripcion">{{i.hora}}</ion-card-subtitle>
+          <ion-card-subtitle class="descripcion">{{i.dia}}</ion-card-subtitle>
+          <ion-card-subtitle class="descripcion">{{i.id}}</ion-card-subtitle>
+        </ion-card-header>
+        <div class="button-container">
+          <a [routerLink]="['/conferencistas/',i.id]" routerDirection="forward">
+            <ion-button class="color1" class="segment-button">Ver más</ion-button>
+          </a>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

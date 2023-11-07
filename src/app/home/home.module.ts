@@ -1,3 +1,5 @@
+import { IntegrantesEquipoComponent } from './../integrantes-equipo/integrantes-equipo.component';
+import { RegistroEquipoComponent } from './../registro-equipo/registro-equipo.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -23,6 +25,16 @@ import { ClusteringComponent } from '../talleristas/clustering/clustering.compon
 import { GatheringgComponent } from '../talleristas/gatheringg/gatheringg.component';
 import { NodeComponent } from '../talleristas/node/node.component';
 import { DetallesComponent } from '../talleristas/fotos/detalles/detalles.component';
+import { EncaComponent } from '../enca/enca.component';
+import { ConferencistasComponent } from '../conferencistas/conferencistas.component';
+import { InicioComponent } from '../conferencistas/inicio/inicio.component';
+import { DetaConfeComponent } from '../conferencistas/deta-confe/deta-confe.component';
+import { EscuelainfoComponent } from '../instituciones/escuelainfo/escuelainfo.component';
+import { Inicio1Component } from '../instituciones/inicio1/inicio1.component';
+import { InstitucionesComponent } from '../instituciones/instituciones.component';
+import { RolesComponent } from '../roles/roles.component';
+import { CategoriaComponent } from '../categoria/categoria.component';
+import { RegistroIndividualComponent } from '../registro-individual/registro-individual.component';
 
 
 
@@ -33,6 +45,6 @@ import { DetallesComponent } from '../talleristas/fotos/detalles/detalles.compon
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent,IntegraiComponent,ClusteringComponent,GatheringgComponent,NodeComponent,DetallesComponent]
+  declarations: [HomePage,PrincipalComponent,CustomFooterComponent, InstitutionsComponent, OrganizationComponent, ContactComponent,AplicacionesComponent,KaliComponent,KotlinComponent,PythonComponent,RosypencvComponent,TalleristasComponent,FotosComponent, ProgramComponent,IntegraiComponent,ClusteringComponent,GatheringgComponent,NodeComponent,DetallesComponent,EncaComponent,ConferencistasComponent,InicioComponent,DetaConfeComponent,EscuelainfoComponent,Inicio1Component,InstitucionesComponent,RolesComponent,CategoriaComponent,RegistroIndividualComponent,RegistroEquipoComponent,IntegrantesEquipoComponent]
 })
 export class HomePageModule {}

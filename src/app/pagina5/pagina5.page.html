@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+  <div class="form-container">
+    <form [formGroup]="registra">
+      <ion-list class="login-form">
+        <ion-item class="login-item">
+          <ion-label position="floating" class="login-label">Correo</ion-label>
+          <ion-input formControlName="Correo" placeholder="Correo"></ion-input>
+        </ion-item>
+        <div *ngFor="let s of error">
+          <ion-label *ngIf="registra.get('Correo')?.hasError(s.type) && (registra.get('Correo')?.touched || registra.get('Correo')?.dirty)">
+            {{ s.message }}
+          </ion-label>
+        </div>
+        <ion-item class="login-item">
+          <ion-label position="floating" class="login-label">Contraseña</ion-label>
+          <ion-input formControlName="Contrasena" [type]="showPassword ? 'text' : 'password'" placeholder="Contraseña"></ion-input>
+          <ion-icon [name]="showPassword ? 'eye-off' : 'eye'" slot="end" (click)="togglePasswordVisibility()"></ion-icon>
+        </ion-item>
+        <div *ngFor="let d of error">
+          <ion-label *ngIf="registra.get('Contrasena')?.hasError(d.type) && (registra.get('Contrasena')?.touched || registra.get('Contrasena')?.dirty)">
+            {{ d.message }}
+          </ion-label>
+        </div>
+      </ion-list>
+      <ion-button (click)="guardar()" [disabled]="registra.invalid" expand="block" class="login-button">
+        Iniciar Sesión
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

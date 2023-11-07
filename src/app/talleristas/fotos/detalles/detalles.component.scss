@@ -1,10 +1,30 @@
 .imagenes {
-    width: 20%; /* Ajusta el tamaño máximo de la imagen */
-    height:40%; /* Ajusta el tamaño máximo de la imagen */
-  }
-  .description {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+  vertical-align: middle; /* Centra verticalmente */
+}
+ .description {
     text-align: justify;
-    font-size: 20px;
+    font-size: 28px;
     margin: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+  .description1 {
+    text-align: center;
+    font-size: 38px;
+    margin: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  ion-button.color1 {
+    color: #adff2f;
+    border: 1px solid var(--border-color);
+  }
+  ion-button {
+    --background: #adff2f;
+    color: #000000;
+  }
+  :root {
+    --border-color: #000;
+}

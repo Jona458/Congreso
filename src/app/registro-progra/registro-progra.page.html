@@ -1,0 +1,129 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title  color =danger >REGISTRO CONCURSO DE PROGRAMACION </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">registroProgra</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form [formGroup]="registra">
+    <ion-list>
+      <ion-list>
+        <ion-button (click)="guardar()" expand="block" fill="clear" shape="round" color="primary" size="large">
+          Datos del Capitan del Equipo
+        </ion-button>
+
+        <ion-item>
+          <ion-input label="Nombre Del Equipo"  placeholder="Enter text" formControlName="Equipo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Nombre Capitan " placeholder="Enter text" formControlName="Capitan"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Matricula" type="number" placeholder="000"formControlName="Matricula"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Password" type="password" value="password"formControlName ="Password"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input  label="Email " type="email" placeholder="email@domain.com"formControlName= "Email"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Telefono" type="tel" placeholder="888-888-8888" formControlName= "Telefono"></ion-input>
+        </ion-item>
+
+        <ion-item>
+        <ion-input  label="Escuela" placeholder="Enter text" formControlName="Escuela"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input  label="Carrera" placeholder="Enter text" formControlName="Carrera"></ion-input>
+      </ion-item>
+     
+      <ion-button (click)="guardar()" expand="block" fill="clear" shape="round" color="primary" size="large">
+        Datos SubCapitan del Equipo
+      </ion-button>
+
+      <ion-item>
+        <ion-input *ngIf="bandera" label="Nombre Del Equipo" placeholder="Enter text" formControlName="Equipo"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input  *ngIf="bandera" label="Nombre SubCapitan " placeholder="Enter text" formControlName="SubCapitan"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input  *ngIf="bandera" label="Matricula" type="number" placeholder="000"formControlName="Matricula2"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input *ngIf="bandera"  label="Password" type="password" value="password"formControlName ="Password2"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input  *ngIf="bandera" label="Email " type="email" placeholder="email@domain.com"formControlName= "Email2"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input *ngIf="bandera" label="Telefono" type="tel" placeholder="888-888-8888" formControlName= "Telefono2"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-input  *ngIf="bandera" label="Escuela" placeholder="Enter text" formControlName="Escuela"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input *ngIf="bandera"  label="Carrera" placeholder="Enter text" formControlName="Carrera"></ion-input>
+    </ion-item>
+    
+    <ion-button (click)="guardar2()" expand="block" fill="clear" shape="round" color="primary" size="large">
+      Datos Integrante3 del Equipo
+    </ion-button>
+
+    <ion-item>
+      <ion-input *ngIf="bandera2"  label="Nombre Del Equipo" placeholder="Enter text" formControlName="Equipo"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input *ngIf="bandera2" label="Nombre Integrante3 " placeholder="Enter text" formControlName="Integrante3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input *ngIf="bandera2" label="Matricula" type="number" placeholder="000"formControlName="Matricula3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input *ngIf="bandera2" label="Password" type="password" value="password"formControlName ="Password3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input *ngIf="bandera2" label="Email " type="email" placeholder="email@domain.com"formControlName= "Email3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input *ngIf="bandera2" label="Telefono" type="tel" placeholder="888-888-8888" formControlName= "Telefono3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <ion-input *ngIf="bandera2" label="Escuela" placeholder="Enter text" formControlName="Escuela"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input *ngIf="bandera2" label="Carrera" placeholder="Enter text" formControlName="Carrera"></ion-input>
+  </ion-item>
+
+
+      </ion-list>
+    </ion-list>
+   </form>
+</ion-content>

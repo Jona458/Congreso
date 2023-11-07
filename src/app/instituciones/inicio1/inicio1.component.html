@@ -1,0 +1,18 @@
+<ion-card>
+  <ion-row justify-content-center align-items-center>
+    <ion-col size="12" class="ion-text-center"> <!-- Centramos el botón horizontalmente -->
+      <ion-button class="color1" class="segment-button">INSTITUCIONES</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let i of actividades" [routerLink]="['/instituciones/', i.id]" routerDirection="forward">
+        <ion-thumbnail slot="start">
+          <img src="{{i.imagen}}" class="imagenes">
+        </ion-thumbnail>
+        <ion-label class="descripcion1">{{i.escuela}}</ion-label>
+        <ion-button color="success" fill="clear">Ver más</ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

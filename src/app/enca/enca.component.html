@@ -1,0 +1,6 @@
+<ion-segment [scrollable]="true" value="heart" class="segment-container">
+  <ion-segment-button *ngFor="let i of accion" [routerLink]="i.direccion" routerDirection="forward" class="segment-button">
+    <img [src]="i.imagen" class="segment-image">
+    <ion-text class="segment-label">{{ i.descripcion }}</ion-text>
+  </ion-segment-button>
+  </ion-segment>

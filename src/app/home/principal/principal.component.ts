@@ -17,4 +17,10 @@ export class PrincipalComponent  implements OnInit {
   llamarp2(){
     this.ruta.navigate(['pagina2'])
   };
+  llamarregisPro(){
+    this.ruta.navigate(['registro-progra'])
+  };
+  iniciode(){
+    this.ruta.navigate(['pagina3'])
+  };
 }
