@@ -17,6 +17,8 @@ export class FormunoPage implements OnInit {
       Email:['',Validators.email],
       Password:['',Validators.minLength(8)],
       Telefono:[''],
+      Fecha:[''],
+      Horario:[''],
       Titulo:[''],
       Descripcion:[''],
     })

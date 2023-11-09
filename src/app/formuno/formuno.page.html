@@ -126,7 +126,7 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="calendar-number-sharp"></ion-icon>
-          <ion-select label="Selecciona la fecha deseada" label-placement="floating" fill="solid">
+          <ion-select label="Selecciona la fecha deseada" label-placement="floating" fill="solid" formControlName="Fecha">
             <ion-select-option value="jueves">Jueves 28 de Septiembre 2023</ion-select-option>
             <ion-select-option value="viernes">Viernes 29 de Septiembre 2023</ion-select-option>
             <ion-select-option value="sabado">Sabado 30 de Septiembre 2023</ion-select-option>
@@ -134,10 +134,10 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="time-sharp"></ion-icon>
-          <ion-select label="Selecciona el horario deseado" label-placement="floating" fill="solid">
-            <ion-select-option value="jueves"> 9:00 am - 12:00 pm </ion-select-option>
-            <ion-select-option value="viernes"> 9:00 am - 10:00 pm </ion-select-option>
-            <ion-select-option value="sabado">10:00 am - 01:00 pm </ion-select-option>
+          <ion-select label="Selecciona el horario deseado" label-placement="floating" fill="solid" formControlName="Horario">
+            <ion-select-option value="horariouno"> 9:00 am - 12:00 pm </ion-select-option>
+            <ion-select-option value="horariodos"> 9:00 am - 10:00 pm </ion-select-option>
+            <ion-select-option value="horariotres">10:00 am - 01:00 pm </ion-select-option>
           </ion-select>
         </ion-item>
         <ion-item>
