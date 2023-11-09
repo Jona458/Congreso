@@ -71,7 +71,15 @@ const routes: Routes = [
   {
     path: 'registrotall',
     loadChildren: () => import('./registrotall/registrotall.module').then( m => m.RegistrotallPageModule)
+  },  {
+    path: 'formuno',
+    loadChildren: () => import('./formuno/formuno.module').then( m => m.FormunoPageModule)
   },
+  {
+    path: 'formdos',
+    loadChildren: () => import('./formdos/formdos.module').then( m => m.FormdosPageModule)
+  },
+
 
 
   

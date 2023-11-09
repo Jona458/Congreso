@@ -21,6 +21,15 @@ export class PrincipalComponent  implements OnInit {
   llamarregistrotall(){
     this.ruta.navigate(['registrotall'])
   };
+  llamarformuno(){
+    this.ruta.navigate(['formuno'])
+  };
+  llamarformdos(){
+    this.ruta.navigate(['formdos'])
+  };
+  llamarlogin(){
+    this.ruta.navigate(['login'])
+  };
   aparecerDesaparecer(){
     if(this.bandera){
       this.bandera=false;
