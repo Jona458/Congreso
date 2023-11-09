@@ -1,3 +1,4 @@
+import { ProtecGuard } from './login/protec.guard';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './home/principal/principal.component';
@@ -32,24 +33,30 @@ const routes: Routes = [
   {
     path: 'institutions',
     component: InstitutionsComponent,
+    canActivate: [ProtecGuard]
   },
   {
     path: 'organization',
     component: OrganizationComponent,
+    canActivate: [ProtecGuard]
   },
   {
     path: 'contact',
     component: ContactComponent,
+    canActivate: [ProtecGuard]
   },
   {
     path: 'talleristas', component: TalleristasComponent,
+    canActivate: [ProtecGuard]
   },
   {
     path: 'talleristas/:id', component: DetallesComponent,
+    canActivate: [ProtecGuard]
   },
   {
     path: 'program',
     component: ProgramComponent,
+    canActivate: [ProtecGuard]
   }, 
   { path: 'aplicaciones', component: AplicacionesComponent},
   { path: 'integrai', component: IntegraiComponent},
@@ -71,7 +78,8 @@ const routes: Routes = [
   {
     path: 'registrotall',
     loadChildren: () => import('./registrotall/registrotall.module').then( m => m.RegistrotallPageModule)
-  },  {
+  },
+  {
     path: 'formuno',
     loadChildren: () => import('./formuno/formuno.module').then( m => m.FormunoPageModule)
   },
@@ -79,6 +87,15 @@ const routes: Routes = [
     path: 'formdos',
     loadChildren: () => import('./formdos/formdos.module').then( m => m.FormdosPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },  {
+    path: 'form-taller',
+    loadChildren: () => import('./form-taller/form-taller.module').then( m => m.FormTallerPageModule)
+  }
+
+
 
 
 
