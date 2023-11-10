@@ -101,7 +101,7 @@
         <ion-item>
           <ion-col>
           <div class="ion-text-center">
-          <h1>Registro de fechas y horarios</h1>
+          <h1>Registro para el programa general</h1>
           </div>
           </ion-col>
         </ion-item>
@@ -113,8 +113,9 @@
           <ion-label *ngIf="bandera">Dato requerido</ion-label>
         </ion-item> -->
         <ion-item>
-          <ion-icon slot="start" name="mail-sharp"></ion-icon>
-          <ion-input label="Email" type="email" placeholder="Ingrese su correo" formControlName="Email"></ion-input>
+          <ion-icon slot="start" name="id-card-sharp"></ion-icon>
+            <ion-label>Correo</ion-label>
+              <ion-input type="email" formControlName="Correo" pattern=".+@tese.edu.mx" placeholder="example@tese.edu.mx"></ion-input>
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="key-sharp"></ion-icon>
