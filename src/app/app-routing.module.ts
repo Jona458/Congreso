@@ -93,6 +93,10 @@ const routes: Routes = [
   },  {
     path: 'form-taller',
     loadChildren: () => import('./form-taller/form-taller.module').then( m => m.FormTallerPageModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import('./crudStorage/form/form.module').then( m => m.FormPageModule)
   }
 
 
