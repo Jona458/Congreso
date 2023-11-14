@@ -15,8 +15,7 @@ export class FormTallerPage implements OnInit {
       Rol:[''],
       Nombre:['',Validators.required],
       Correo:['',Validators.email],
-      Password:['',Validators.minLength(8)],
-      Telefono:[''],
+      Password:['',Validators.minLength(8)]
     })
    }
 

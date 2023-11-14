@@ -16,10 +16,10 @@ export class FormunoPage implements OnInit {
       Nombre:['',Validators.required],
       Correo:['',Validators.email],
       Password:['',Validators.minLength(8)],
-      Telefono:[''],
+      Telefono:['',Validators.required],
       Fecha:[''],
       Horario:[''],
-      Titulo:[''],
+      Titulo:['', Validators.required],
       Descripcion:[''],
     })
    }

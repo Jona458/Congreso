@@ -14,11 +14,11 @@ export class FormdosPage implements OnInit {
   constructor(private form:FormBuilder) {
     this.registra=this.form.group({
       Nombre:['',Validators.required],
-      Email:['',Validators.email],
+      Correo:['',Validators.email],
       Password:['',Validators.minLength(8)],
-      Telefono:[''],
-      Titulo:[''],
-      Descripcion:[''],
+      Telefono:['', Validators.required],
+      Titulo:['', Validators.required],
+      Descripcion:['',Validators.required],
     })
    }
 

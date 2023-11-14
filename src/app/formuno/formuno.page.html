@@ -107,7 +107,8 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="person-circle-sharp"></ion-icon>
-          <ion-input label="Nombre" placeholder="Ingrese su nombre" formControlName="Nombre"></ion-input>
+          <ion-label>Nombre</ion-label>
+          <ion-input placeholder="Ingrese su nombre" formControlName="Nombre"></ion-input>
         </ion-item>
         <!--<ion-item>
           <ion-label *ngIf="bandera">Dato requerido</ion-label>
@@ -119,11 +120,13 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="key-sharp"></ion-icon>
-          <ion-input label="Password" type="password" placeholder="Ingrese una contraseña" value="password" formControlName="Password"></ion-input>
+          <ion-label>Password</ion-label>
+          <ion-input type="password" placeholder="Ingrese una contraseña" value="password" formControlName="Password"></ion-input>
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="call-sharp"></ion-icon>
-          <ion-input label="Telefono" type="tel" placeholder="Ingrese su telefono" formControlName="Telefono"></ion-input>
+          <ion-label>Teléfono</ion-label>
+          <ion-input type="number" placeholder="Ingrese su telefono" formControlName="Telefono"></ion-input>
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="calendar-number-sharp"></ion-icon>
@@ -143,7 +146,8 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="reader-sharp"></ion-icon>
-          <ion-input label="Título"  placeholder="Ingrese el titulo del taller y/o conferencia" formControlName="Titulo"></ion-input>
+          <ion-label>Título</ion-label>
+          <ion-input placeholder="Ingrese el titulo del taller y/o conferencia" formControlName="Titulo"></ion-input>
         </ion-item>
         <ion-button (click)="guardar()" id="present-alert" expand="block" shape="round">Registrar</ion-button>
         <ion-alert

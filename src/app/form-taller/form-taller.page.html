@@ -115,7 +115,8 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="person-circle-sharp"></ion-icon>
-          <ion-input label="Nombre" placeholder="Ingrese su nombre" formControlName="Nombre"></ion-input>
+          <ion-label>Nombre</ion-label>
+          <ion-input placeholder="Ingrese su nombre" formControlName="Nombre"></ion-input>
         </ion-item>
         <!--<ion-item>
           <ion-label *ngIf="bandera">Dato requerido</ion-label>
@@ -127,7 +128,8 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="key-sharp"></ion-icon>
-          <ion-input label="Password" type="password" placeholder="Ingrese una contraseña" value="password" formControlName="Password"></ion-input>
+          <ion-label>Password</ion-label>
+          <ion-input type="password" placeholder="Ingrese una contraseña" value="password" formControlName="Password"></ion-input>
         </ion-item>
         <ion-button (click)="guardar()" id="present-alert" expand="block" shape="round">Registrar taller</ion-button>
         <ion-alert
