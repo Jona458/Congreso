@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>form</ion-title>
+    <ion-title>Registro de datos con CRUD</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,5 +10,49 @@
       <ion-title size="large">Datos con CRUD</ion-title>
     </ion-toolbar>
   </ion-header>
+<ion-item>
+  <ion-label position="floating">Rut / key </ion-label>
+  <ion-input type="text" placeholder="Ej:276187628768k" #txtRut></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Nombre</ion-label>
+  <ion-input type="text" placeholder="Ej:Pedro Perez" #txtNombre></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Telefono</ion-label>
+  <ion-input type="text" placeholder="Ej:5563745689" #txtTelefono></ion-input>
+</ion-item>
+
+<div *ngIf=nombre>
+<ion-text color="secondary">
+  <h1 class="ion-text-center">Nombre</h1>
+  <h2>{{nombre}}</h2>
+</ion-text>
+<ion-text color="secondary">
+  <h1 class="ion-text-center">Telefono</h1>
+  <h2>{{telefono}}</h2>
+</ion-text>
+
+<ion-text color="secondary" >
+<ion-button (click)="eliminar(txtRut)" fill="clear" class="ion-text-center">
+  <ion-icon slot="icon-only" name="trash"></ion-icon>
+</ion-button>
+</ion-text>
+</div>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="agregar( txtRut , txtTelefono, txtNombre )">
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+    </ion-button>
+    <ion-button (click)="buscar(txtRut)">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+    <ion-button (click)="listar(txtRut)" slot="end">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+   
+  </ion-toolbar>
+</ion-footer>

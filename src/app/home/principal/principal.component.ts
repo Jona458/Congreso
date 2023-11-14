@@ -30,6 +30,9 @@ export class PrincipalComponent  implements OnInit {
   llamarlogin(){
     this.ruta.navigate(['login'])
   };
+  llamarform(){
+    this.ruta.navigate(['form'])
+  };
   aparecerDesaparecer(){
     if(this.bandera){
       this.bandera=false;
