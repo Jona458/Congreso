@@ -11,11 +11,10 @@ import { CrudService } from '../crud.service';
 })
 export class FormPage {
 
-nombre ="";
-telefono ="";
+nombre = "";
+telefono = "";
 rut = "";
-
-
+listado = [];
   constructor(private crud: CrudService,
               private toast: ToastController) { }
 
@@ -31,30 +30,29 @@ async agregar(txtRut:HTMLInputElement, txtNombre:HTMLInputElement, txtTelefono:H
       position: "middle"
     });
     toast.present();
-    return;
   }
   else if(txtNombre.value.trim().length == 0)
   {
     const toast = await this.toast.create({
-      message: 'El rut no fue especificado',
+      message: 'El nombre no fue especificado',
       duration: 2000,
       color : "danger",
       position: "middle"
     });
     toast.present();
-    return;
   }
   else if(txtTelefono.value.trim().length == 0)
   {
     const toast = await this.toast.create({
-      message: 'El rut no fue especificado',
+      message: 'El telefono no fue especificado',
       duration: 2000,
       color : "danger",
       position: "middle"
     });
     toast.present();
-    return;
   }
+else 
+{
   const datos = [{"Rut": txtRut.value,
                   "Nombre": txtNombre.value,
                   "Telefono": txtTelefono.value
@@ -67,10 +65,12 @@ async agregar(txtRut:HTMLInputElement, txtNombre:HTMLInputElement, txtTelefono:H
         position: "middle"
       });
       toast.present();
-      //limpia las cajas de texto
+       //limpia las cajas de texto
       txtRut.value = "";
       txtNombre.value = "";
       txtTelefono.value = "";
+    }
+      this.nombre = ""; //limpia la propiedad por ende la vita
 
 }
 async buscar(txtRut:HTMLInputElement)
@@ -87,6 +87,7 @@ this.telefono = valor[0].telefono;
 
       //limpia las cajas de texto
       txtRut.value = "";
+      this.listado = []; //elimina la lista de la vista 
   }
   else 
   {
@@ -142,5 +143,12 @@ async eliminar()
     this.telefono = "";
 
 }
-
+async listar ()
+{
+  //limpia la busqueda de la vista
+  this.nombre = "";
+  this.telefono = "";
+  //muestra los datos registrados en el storage
+  this.listado = this.crud.listar();
+}
 }

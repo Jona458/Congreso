@@ -40,6 +40,21 @@
 </ion-text>
 </div>
 
+<div *ngIf="listado.length > 0">
+  <h1 class="ion-text-center">Listado de contactos</h1>
+  <ion-list>
+    <div *ngFor="let item of listado">
+<ion-item>
+  <ion-label>nombre: {{item[0].nombre}}</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Telefono: {{item[0].telefono}}</ion-label>
+</ion-item>
+</div>
+
+<hr>
+</ion-list>
+</div>
 </ion-content>
 
 <ion-footer>
