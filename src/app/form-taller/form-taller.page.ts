@@ -10,12 +10,15 @@ export class FormTallerPage implements OnInit {
   public alertButtons = ['OK'];
   registra: FormGroup;
   bandera= true;
+  limp= true;
   constructor(private form:FormBuilder) {
     this.registra=this.form.group({
-      Rol:[''],
+      Rol:['', Validators.required],
       Nombre:['',Validators.required],
-      Correo:['',Validators.email],
-      Password:['',Validators.minLength(8)]
+      Descripcion: ['',Validators.required],
+      Horario: ['',Validators.required],
+      Fecha: ['',Validators.required]
+      
     })
    }
 
@@ -25,7 +28,10 @@ export class FormTallerPage implements OnInit {
     console.log('hola')
     this.bandera=false;
   };
-  
+  limpiar(){
+    console.log(this.limp)
+    this.limp=false;
+  };
   aparecerDesaparecer(){
     if(this.bandera){
       this.bandera=false;

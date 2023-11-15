@@ -11,16 +11,17 @@ export class FormunoPage implements OnInit {
   public alertButtons = ['OK'];
   registra: FormGroup;
   bandera= true;
+  limp = true;
+  list = true;
   constructor(private form:FormBuilder) {
     this.registra=this.form.group({
       Nombre:['',Validators.required],
       Correo:['',Validators.email],
       Password:['',Validators.minLength(8)],
       Telefono:['',Validators.required],
-      Fecha:[''],
-      Horario:[''],
-      Titulo:['', Validators.required],
-      Descripcion:[''],
+      Fecha:['' ,Validators.required],
+      Horario:['',Validators.required],
+      Tipoequipo:['',Validators.required],
     })
    }
 
@@ -28,10 +29,17 @@ export class FormunoPage implements OnInit {
   ngOnInit() {
   };
   guardar(){
-    console.log('hola')
+    console.log(this.registra)
     this.bandera=false;
   };
-  
+ limpiar(){
+    console.log(this.registra)
+    this.limp=false;
+  };
+  listar(){
+    console.log(this.registra)
+    this.list=false;
+  };
   aparecerDesaparecer(){
     if(this.bandera){
       this.bandera=false;

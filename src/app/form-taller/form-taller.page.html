@@ -89,7 +89,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Formulario talleristas </ion-title>
+      <ion-title size="large"> Registro de dias_horarios </ion-title>
     </ion-toolbar>
   </ion-header>
     <ion-grid>
@@ -102,7 +102,7 @@
         <ion-item>
           <ion-col>
           <div class="ion-text-center">
-          <h1>Talleristas/Conferencistas</h1>
+          <h1>Dias / Horarios</h1>
           </div>
           </ion-col>
         </ion-item>
@@ -122,22 +122,43 @@
           <ion-label *ngIf="bandera">Dato requerido</ion-label>
         </ion-item> -->
         <ion-item>
-          <ion-icon slot="start" name="id-card-sharp"></ion-icon>
-            <ion-label>Correo</ion-label>
-              <ion-input type="email" formControlName="Correo" pattern=".+@tese.edu.mx" placeholder="Ingrese su correo"></ion-input>
+          <ion-icon slot="start" name="time-sharp"></ion-icon>
+          <ion-select label="Selecciona el horario deseado" label-placement="floating" fill="solid" formControlName="Horario">
+            <ion-select-option value="horariouno"> 09:00 am - 09:45 am </ion-select-option>
+            <ion-select-option value="horariodos"> 10:00 am - 10:45 am </ion-select-option>
+            <ion-select-option value="horariotres">11:00 am - 11:45 am </ion-select-option>
+            <ion-select-option value="horariocuatro">12:00 pm - 12:45 pm </ion-select-option>
+            <ion-select-option value="horariocinco">01:00 pm - 01:45 pm </ion-select-option>
+            <ion-select-option value="horarioseis">02:00 pm - 02:45 pm </ion-select-option>
+          </ion-select>
         </ion-item>
         <ion-item>
-          <ion-icon slot="start" name="key-sharp"></ion-icon>
-          <ion-label>Password</ion-label>
-          <ion-input type="password" placeholder="Ingrese una contraseña" value="password" formControlName="Password"></ion-input>
+          <ion-icon slot="start" name="calendar-number-sharp"></ion-icon>
+          <ion-select label="Selecciona la fecha deseada" label-placement="floating" fill="solid" formControlName="Fecha">
+            <ion-select-option value="jueves">Jueves 28 de Septiembre 2023</ion-select-option>
+            <ion-select-option value="viernes">Viernes 29 de Septiembre 2023</ion-select-option>
+            <ion-select-option value="sabado">Sabado 30 de Septiembre 2023</ion-select-option>
+          </ion-select>
         </ion-item>
-        <ion-button (click)="guardar()" id="present-alert" expand="block" shape="round">Registrar taller</ion-button>
+        <ion-item>
+          <ion-icon slot="start" name="newspaper-sharp"></ion-icon>
+          <ion-label>Descripción</ion-label>
+          <ion-input placeholder="Ingrese Descripción" formControlName="Descripcion"></ion-input>
+        </ion-item>
+        <ion-button (click)="guardar()" id="present-alert" expand="block" shape="round">
+          Registrar
+          <ion-icon slot="icon-only" name="save-sharp"></ion-icon>
+        </ion-button>
         <ion-alert
         trigger="present-alert"
         header="Registro exitoso"
         subHeader="Su registro se completó con éxito."
         [buttons]="alertButtons">
         </ion-alert>
+        <ion-button (click)="limpiar()" id="present-alert" expand="block" shape="round" type="reset">
+          Limpiar
+          <ion-icon slot="icon-only" name="arrow-undo-sharp"></ion-icon>
+        </ion-button>
       </ion-list>
     </ion-list>
    </form>

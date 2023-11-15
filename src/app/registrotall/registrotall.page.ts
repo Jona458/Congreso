@@ -11,13 +11,11 @@ export class RegistrotallPage implements OnInit {
   public alertButtons = ['OK'];
   registra: FormGroup;
   bandera= true;
+  limp= true;
   constructor(private form:FormBuilder) {
     this.registra=this.form.group({
       Nombre:['',Validators.required],
-      Matricula:[''],
-      Password:[''],
-      Email:[''],
-      Telefono:[''],
+      Fecha:['', Validators.required]
     })
    }
 
@@ -26,6 +24,10 @@ export class RegistrotallPage implements OnInit {
   };
   guardar(){
     console.log('hola')
+    this.bandera=false;
+  };
+  limpiar(){
+    console.log(this.limp)
     this.bandera=false;
   };
   

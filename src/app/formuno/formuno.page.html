@@ -121,7 +121,7 @@
         <ion-item>
           <ion-icon slot="start" name="key-sharp"></ion-icon>
           <ion-label>Password</ion-label>
-          <ion-input type="password" placeholder="Ingrese una contraseña" value="password" formControlName="Password"></ion-input>
+          <ion-input type="password" placeholder="Ingrese una contraseña(min.8 caracteres)" value="password" formControlName="Password"></ion-input>
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="call-sharp"></ion-icon>
@@ -139,28 +139,65 @@
         <ion-item>
           <ion-icon slot="start" name="time-sharp"></ion-icon>
           <ion-select label="Selecciona el horario deseado" label-placement="floating" fill="solid" formControlName="Horario">
-            <ion-select-option value="horariouno"> 9:00 am - 12:00 pm </ion-select-option>
-            <ion-select-option value="horariodos"> 9:00 am - 10:00 pm </ion-select-option>
-            <ion-select-option value="horariotres">10:00 am - 01:00 pm </ion-select-option>
+            <ion-select-option value="horariouno"> 09:00 am - 09:45 am </ion-select-option>
+            <ion-select-option value="horariodos"> 10:00 am - 10:45 am </ion-select-option>
+            <ion-select-option value="horariotres">11:00 am - 11:45 am </ion-select-option>
+            <ion-select-option value="horariocuatro">12:00 pm - 12:45 pm </ion-select-option>
+            <ion-select-option value="horariocinco">01:00 pm - 01:45 pm </ion-select-option>
+            <ion-select-option value="horarioseis">02:00 pm - 02:45 pm </ion-select-option>
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-icon slot="start" name="reader-sharp"></ion-icon>
-          <ion-label>Título</ion-label>
-          <ion-input placeholder="Ingrese el titulo del taller y/o conferencia" formControlName="Titulo"></ion-input>
+          <ion-icon slot="start" name="people-sharp"></ion-icon>
+          <ion-select label="Selecciona si tu registro es individual o en equipo" label-placement="floating" fill="solid" formControlName="Tipoequipo">
+            <ion-select-option value="indiv"> Registro Individual </ion-select-option>
+            <ion-select-option value="equipo"> Registro en Equipo </ion-select-option>
+          </ion-select>
         </ion-item>
-        <ion-button (click)="guardar()" id="present-alert" expand="block" shape="round">Registrar</ion-button>
+        <ion-button (click)="guardar()" id="present-alert" expand="block" shape="round">
+          Registrar
+          <ion-icon slot="icon-only" name="save-sharp"></ion-icon>
+        </ion-button>
         <ion-alert
         trigger="present-alert"
         header="Registro exitoso"
         subHeader="Su registro se completó con éxito."
         [buttons]="alertButtons">
         </ion-alert>
+        <ion-button (click)="limpiar()" id="present-alert" expand="block" shape="round" type="reset">
+          Limpiar
+          <ion-icon slot="icon-only" name="arrow-undo-sharp"></ion-icon>
+        </ion-button>
+        <ion-button (click)="listar()" id="present-alert" expand="block" shape="round" type="reset">
+          Listar
+          <ion-icon slot="icon-only" name="list-sharp"></ion-icon>
+        </ion-button>
       </ion-list>
     </ion-list>
    </form>
     </ion-col>
     <ion-col></ion-col>
   </ion-row>
+  </ion-grid>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="3">
+       <ion-list>
+      Andres
+       </ion-list>
+       <ion-list>
+        201521270@tese.edu.mx
+         </ion-list>
+         <ion-list>
+        Jueves 28 de Septiembre 2023
+           </ion-list>
+           <ion-list>
+            09: 00 am - 09:45 am
+               </ion-list>
+               <ion-list>
+                Registro Individual
+                   </ion-list>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 </ion-content>

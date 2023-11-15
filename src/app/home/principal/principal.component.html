@@ -72,21 +72,21 @@
         <ion-item (click)="llamarp2()">
           <ion-label>Pagina 2</ion-label>
         </ion-item>
-        <ion-item (click)="llamarregistrotall()">
-          <ion-label>Registro talleres</ion-label>
-        </ion-item>
         <ion-item (click)="llamarformuno()">
           <ion-label>Registro para el Programa General </ion-label>
         </ion-item>
         <ion-item (click)="llamarformdos()">
-          <ion-label>Registro para descripción </ion-label>
+          <ion-label>Registro unicamente Horario </ion-label>
         </ion-item>
+        <ion-item (click)="llamarregistrotall()">
+          <ion-label>Registro unicamente Fechas</ion-label>
+        </ion-item>
+        <ion-item routerLink="/form-taller">
+          <ion-label>Registro de Horarios / Fechas</ion-label>
+        </ion-item>  
         <ion-item (click)="llamarlogin()">
           <ion-label>Formulario para Login</ion-label>
         </ion-item>
-        <ion-item routerLink="/form-taller">
-          <ion-label>Formulario talleristas</ion-label>
-        </ion-item>  
         <ion-item (click)="llamarform()">
           <ion-label>CRUD</ion-label>
         </ion-item>
@@ -101,9 +101,4 @@
       </ion-toolbar>
     </ion-footer>
     </ion-content>
- 
-
-   
-
- 
 </ion-app>
