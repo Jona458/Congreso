@@ -1,73 +1,149 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Registro de datos con CRUD</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">Datos con CRUD</ion-title>
+      <ion-title>Registro de datos con CRUD</ion-title>
     </ion-toolbar>
   </ion-header>
-<ion-item>
-  <ion-label position="floating">Rut / key </ion-label>
-  <ion-input type="text" placeholder="Ej:276187628768k" #txtRut></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating">Nombre</ion-label>
-  <ion-input type="text" placeholder="Ej:Pedro Perez" #txtNombre></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating">Telefono</ion-label>
-  <ion-input type="text" placeholder="Ej:5563745689" #txtTelefono></ion-input>
-</ion-item>
-
-<div *ngIf=nombre>
-<ion-text color="secondary">
-  <h1 class="ion-text-center">Nombre</h1>
-  <h2>{{nombre}}</h2>
-</ion-text>
-<ion-text color="secondary">
-  <h1 class="ion-text-center">Telefono</h1>
-  <h2>{{telefono}}</h2>
-</ion-text>
-
-<ion-text color="secondary" >
-<ion-button (click)="eliminar(txtRut)" fill="clear" class="ion-text-center">
-  <ion-icon slot="icon-only" name="trash"></ion-icon>
-</ion-button>
-</ion-text>
-</div>
-
-<div *ngIf="listado.length > 0">
-  <h1 class="ion-text-center">Listado de contactos</h1>
-  <ion-list>
-    <div *ngFor="let item of listado">
-<ion-item>
-  <ion-label>nombre: {{item[0].nombre}}</ion-label>
-</ion-item>
-<ion-item>
-  <ion-label>Telefono: {{item[0].telefono}}</ion-label>
-</ion-item>
-</div>
-
-<hr>
-</ion-list>
-</div>
-</ion-content>
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-button (click)="agregar( txtRut , txtTelefono, txtNombre )">
-      <ion-icon slot="icon-only" name="add"></ion-icon>
-    </ion-button>
-    <ion-button (click)="buscar(txtRut)">
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-    <ion-button (click)="listar(txtRut)" slot="end">
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-   
-  </ion-toolbar>
-</ion-footer> -->
+  
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Datos con CRUD</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-list>
+        <ion-item>
+            Rut
+        </ion-item>
+          <ion-item>
+            <ion-icon slot="start" name="key-outline"></ion-icon>
+          <input type="text" placeholder="Ej:276187628768k" #txtRut/>
+          </ion-item>
+        <ion-item>
+          Nombre
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="person-outline"></ion-icon>
+          <input type="text" placeholder="Ej:Pedro Perez" #txtNombre/>
+        </ion-item>
+        <ion-item>
+          Seleccione su rol
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="barbell-outline"></ion-icon>  
+          <select #txtRol> 
+            <option value="tallerista">Tallerista</option>
+            <option value="conferencista">Conferencista</option>
+          </select>
+        </ion-item>
+        <ion-item>
+          Telefono
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="call-outline"></ion-icon>  
+          <input type="text" placeholder="Ej:5563745689" #txtTelefono/>
+        </ion-item>
+        <ion-item>
+          Correo
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="mail-outline"></ion-icon>  
+          <input type="email" placeholder="Ej:Pedro@tese.edu.mx" #txtCorreo/>
+        </ion-item>
+        Seleccione el horario deseado
+        <ion-item>
+          <ion-icon slot="start" name="time-sharp"></ion-icon>          
+          <select #txtHorario>
+            <option value="09:00 am - 09:45 am"> 09:00 am - 09:45 am </option>
+            <option value="10:00 am - 10:45 am"> 10:00 am - 10:45 am </option>
+            <option value="11:00 am - 11:45 am">11:00 am - 11:45 am </option>
+            <option value="12:00 pm - 12:45 pm">12:00 pm - 12:45 pm </option>
+            <option value="01:00 pm - 01:45 pm">01:00 pm - 01:45 pm </option>
+            <option value="02:00 pm - 02:45 pm">02:00 pm - 02:45 pm </option>
+          </select>
+        </ion-item>
+        <ion-item>
+          Seleccione la fecha deseada
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="calendar-number-sharp"></ion-icon>
+          <select #txtFecha>
+            <option value="Jueves 28 de Septiembre 2023">Jueves 28 de Septiembre 2023</option>
+            <option value="Viernes 29 de Septiembre 2023">Viernes 29 de Septiembre 2023</option>
+            <option value="Sabado 30 de Septiembre 2023">Sabado 30 de Septiembre 2023</option>
+          </select>
+        </ion-item>
+  </ion-list>
+  
+  <div *ngIf=nombre>
+  <ion-text color="secondary">
+    <h1 class="ion-text-center">Nombre</h1>
+    <h2>{{nombre}}</h2>
+  </ion-text>
+  <ion-text color="secondary">
+    <h1 class="ion-text-center">Rol</h1>
+    <h2>{{rol}}</h2>
+  </ion-text>
+  <ion-text color="secondary">
+    <h1 class="ion-text-center">Correo</h1>
+    <h2>{{email}}</h2>
+  </ion-text>
+  <ion-text color="secondary">
+    <h1 class="ion-text-center">Telefono</h1>
+    <h2>{{telefono}}</h2>
+  </ion-text>
+  <ion-text color="secondary">
+    <h1 class="ion-text-center">Horario</h1>
+    <h2>{{horario}}</h2>
+  </ion-text>
+  <ion-text color="secondary">
+    <h1 class="ion-text-center">Fecha</h1>
+    <h2>{{fecha}}</h2>
+  </ion-text>
+  
+  <ion-text color="secondary" >
+  <ion-button (click)="eliminar(txtRut)" fill="clear" class="ion-text-center">
+    <ion-icon slot="icon-only" name="trash"></ion-icon>
+  </ion-button>
+  </ion-text>
+  </div>
+  
+  <div *ngIf="listado.length > 0">
+    
+    <h1 class="ion-text-center">Listado de registros</h1>
+    <ion-list>
+      <div *ngFor="let item of listado">
+  <ion-item>
+    <ion-label>Nombre: {{item[0]['nombre']}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Telefono: {{item[0]['telefono']}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Email: {{item[0]['email']}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Horario: {{item[0]['horario']}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fecha: {{item[0]['fecha']}}</ion-label>
+  </ion-item>
+  </div>
+  
+  <hr>
+  </ion-list>
+  </div>
+  </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button (click)="agregar(txtRut , txtNombre,txtRol, txtTelefono,txtCorreo, txtHorario, txtFecha)">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+      <ion-button (click)="buscar(txtRut)">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-button (click)="listar()" slot="end">
+        <ion-icon slot="icon-only" name="list"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  </ion-footer>

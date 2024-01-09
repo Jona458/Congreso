@@ -90,14 +90,20 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'form-taller',
     loadChildren: () => import('./form-taller/form-taller.module').then( m => m.FormTallerPageModule)
   },
   {
     path: 'form',
     loadChildren: () => import('./crudStorage/form/form.module').then( m => m.FormPageModule)
-  }
+  },  {
+    path: 'crud-usua',
+    loadChildren: () => import('./crud-usua/crud-usua.module').then( m => m.CrudUsuaPageModule)
+  },
+
+  
 
 
 

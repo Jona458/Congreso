@@ -24,7 +24,6 @@ export class FormdosPage implements OnInit {
   ngOnInit() {
   };
   guardar(){
-    console.log('hola')
     this.bandera=false;
   };
   limpiar(){

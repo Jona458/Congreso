@@ -25,7 +25,6 @@ export class FormTallerPage implements OnInit {
   ngOnInit() {
   }
   guardar(){
-    console.log('hola')
     this.bandera=false;
   };
   limpiar(){

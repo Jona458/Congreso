@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro de datos con CRUD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Datos con CRUD</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+<ion-item>
+    Rut
+</ion-item>
+  <ion-item>
+  <input type="text" placeholder="Ej:276187628768k" #txtRut/>
+  </ion-item>
+<ion-item>
+  Nombre
+</ion-item>
+<ion-item>
+  <input type="text" placeholder="Ej:Pedro Perez" #txtNombre/>
+</ion-item>
+<ion-item>
+  Telefono
+</ion-item>
+<ion-item>
+  <input type="text" placeholder="Ej:5563745689" #txtTelefono/>
+</ion-item>
+</ion-list>
+
+<div *ngIf=nombre>
+<ion-text color="secondary">
+  <h1 class="ion-text-center">Nombre</h1>
+  <h2>{{nombre}}</h2>
+</ion-text>
+<ion-text color="secondary">
+  <h1 class="ion-text-center">Telefono</h1>
+  <h2>{{telefono}}</h2>
+</ion-text>
+
+<ion-text color="secondary" >
+<ion-button (click)="eliminar()" fill="clear" class="ion-text-center">
+  <ion-icon slot="icon-only" name="trash"></ion-icon>
+</ion-button>
+</ion-text>
+</div>
+
+<div *ngIf="listado.length > 0">
+  <h1 class="ion-text-center">Listado de contactos</h1>
+  <ion-list>
+    <div *ngFor="let item of listado">
+<ion-item>
+  <ion-label>nombre: {{item[0]['nombre']}}</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Telefono: {{item[0]['telefono']}}</ion-label>
+</ion-item>
+</div>
+
+<hr>
+</ion-list>
+</div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="agregar(txtRut , txtNombre, txtTelefono )">
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+    </ion-button>
+    <ion-button (click)="buscar(txtRut)">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+    <ion-button (click)="listar()" slot="end">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
