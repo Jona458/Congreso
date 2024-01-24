@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-
+import {HttpClient} from '@angular/common/http'
 import { Storage } from '@ionic/storage-angular';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StorageService {
-  constructor(private storage: Storage){
+  constructor(private storage: Storage,private http: HttpClient){
     //crear el storage para el usuario
     this.init();
   }
+
   //crea el storage
   async init()
   {
@@ -40,4 +42,29 @@ export class StorageService {
   {
     this.storage.remove(key);
   }
+
+  //Dias
+
+  getDias() {
+    return this.http.get(environment.url + 'dias');
+    return this.http.get<Dia[]>('/api/dias');
+  }
+
+  createDia(dia: Dia) {
+    return this.http.post<Dia>('/api/dias', dia);
+  }
+
+  updateDia(dia: Dia) {
+    return this.http.put<Dia>('/api/dias', dia);
+  }
+
+  deleteDia(id: number) {
+    return this.http.delete<Dia>('/api/dias/' + id);
+  }
 }
+
+interface Dia {
+  iddias: number;
+  fecha: Date;
+  disponibilidad: string;
+} 

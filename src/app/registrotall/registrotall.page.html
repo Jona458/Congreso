@@ -123,16 +123,20 @@
           Registrar Fecha
           <ion-icon slot="icon-only" name="save-sharp"></ion-icon>
         </ion-button>
-        <ion-button (click)="limpiar()" id="present-alert" expand="block" shape="round" type="reset">
+        <ion-button (click)="limpiar()" routerLink="/crud-usua" id="present-alert" expand="block" shape="round" type="reset">
           Limpiar
           <ion-icon slot="icon-only" name="arrow-undo-sharp"></ion-icon>
         </ion-button>
-        <ion-alert
+        <ion-button routerLink="/listadias" id="present-alert" expand="block" shape="round" type="reset">
+          enlistar
+          <ion-icon slot="icon-only" name="arrow-undo-sharp"></ion-icon>
+        </ion-button>
+        <!-- <ion-alert
         trigger="present-alert"
         header="Registro exitoso"
         subHeader="Su registro se completó con éxito."
         [buttons]="alertButtons">
-        </ion-alert>
+        </ion-alert> -->
       </ion-list>
     </ion-list>
    </form>

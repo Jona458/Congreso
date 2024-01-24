@@ -102,6 +102,14 @@ const routes: Routes = [
     path: 'crud-usua',
     loadChildren: () => import('./crud-usua/crud-usua.module').then( m => m.CrudUsuaPageModule)
   },
+  {
+    path: 'listadias',
+    loadChildren: () => import('./listadias/listadias.module').then( m => m.ListadiasPageModule)
+  },
+  {
+    path: 'detalledias',
+    loadChildren: () => import('./detalledias/detalledias.module').then( m => m.DetallediasPageModule)
+  },
 
   
 
