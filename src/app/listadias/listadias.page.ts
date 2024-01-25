@@ -21,8 +21,9 @@ export class ListadiasPage implements OnInit {
 
   ngOnInit() {
    
-    this.diasService.getDias().subscribe(res =>{
+    this.diasService.getDias().subscribe((res:any) =>{
      console.log(res);
+     this.dias = res.body;
     });
   }
 

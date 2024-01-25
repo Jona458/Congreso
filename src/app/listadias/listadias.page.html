@@ -1,14 +1,22 @@
-<!-- <ion-header>
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+    <ion-back-button defaulHref="/registrotall" ></ion-back-button>
+   </ion-button> 
     <ion-title>Días</ion-title>
   </ion-toolbar>
-</ion-header> -->
+</ion-header>
 
-<!-- <ion-content>
+
+<form FormGroup="Dias">
   <ion-list>
     <ion-item *ngFor="let dia of dias">
-      <ion-label>{{ dia.fecha }}</ion-label>
-      <ion-label>{{ dia.disponibilidad }}</ion-label>
-    </ion-item>
+      <ion-label>{{dia.iddias}}
+         {{dia.fecha}}
+          {{dia.disponibilidad}}</ion-label>
+  </ion-item> 
   </ion-list>
-</ion-content> -->
+</form>
+<ion-content>
+  
+</ion-content>

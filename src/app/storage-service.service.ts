@@ -47,11 +47,11 @@ export class StorageService {
 
   getDias() {
     return this.http.get(environment.url + 'dias');
-    return this.http.get<Dia[]>('/api/dias');
+   //return this.http.get<Dia[]>('/api/dias');
   }
 
-  createDia(dia: Dia) {
-    return this.http.post<Dia>('/api/dias', dia);
+  post(data: any) {
+    return this.http.post('/api/dias', data);
   }
 
   updateDia(dia: Dia) {

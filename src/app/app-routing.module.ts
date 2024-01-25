@@ -98,7 +98,8 @@ const routes: Routes = [
   {
     path: 'form',
     loadChildren: () => import('./crudStorage/form/form.module').then( m => m.FormPageModule)
-  },  {
+  },
+  {
     path: 'crud-usua',
     loadChildren: () => import('./crud-usua/crud-usua.module').then( m => m.CrudUsuaPageModule)
   },
@@ -110,6 +111,7 @@ const routes: Routes = [
     path: 'detalledias',
     loadChildren: () => import('./detalledias/detalledias.module').then( m => m.DetallediasPageModule)
   },
+ 
 
   
 
