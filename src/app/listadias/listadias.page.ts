@@ -15,15 +15,23 @@ interface Dia {
 })
 export class ListadiasPage implements OnInit {
   dias: Dia[] = [];
-  constructor(private diasService: StorageService) { 
-     this.dias = [];
-   }
+  constructor(private diasService: StorageService) {
+    this.dias = [];
+  }
+
+  ionViewWillEnter() {
+    this.onlistdias();
+  }
 
   ngOnInit() {
-   
-    this.diasService.getDias().subscribe((res:any) =>{
-     console.log(res);
-     this.dias = res.body;
+
+
+  }
+
+  onlistdias() {
+    this.diasService.getDias().subscribe((res: any) => {
+      console.log(res);
+      this.dias = res.body;
     });
   }
 

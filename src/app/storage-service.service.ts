@@ -50,7 +50,7 @@ export class StorageService {
    //return this.http.get<Dia[]>('/api/dias');
   }
 
-  post(data: any) {
+  guardardias(data: any) {
     return this.http.post('/api/dias', data);
   }
 

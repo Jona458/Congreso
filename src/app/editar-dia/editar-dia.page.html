@@ -1,6 +1,10 @@
+
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>EditarDia</ion-title>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+    <ion-back-button defaulHref="/registrotall" ></ion-back-button>
+   </ion-button> 
+   <ion-title>Editar Dia</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +14,37 @@
       <ion-title size="large">EditarDia</ion-title>
     </ion-toolbar>
   </ion-header>
+</ion-content>
+
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>
+          <ion-label>Datos de Dias</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">id</ion-label>
+            <ion-input type="text" form="id" ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">fecha</ion-label>
+            <ion-input type="text" form="fecha"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">disponibilidad</ion-label>
+            <ion-input type="text" form="disponibilidad"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" (click)="Guardardias">Guardar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
