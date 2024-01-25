@@ -110,7 +110,11 @@ const routes: Routes = [
   {
     path: 'detalledias',
     loadChildren: () => import('./detalledias/detalledias.module').then( m => m.DetallediasPageModule)
+  },  {
+    path: 'nuevodia',
+    loadChildren: () => import('./nuevodia/nuevodia.module').then( m => m.NuevodiaPageModule)
   },
+
  
 
   
