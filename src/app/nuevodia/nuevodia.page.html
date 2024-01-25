@@ -1,13 +1,30 @@
+
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Nuevodia</ion-title>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+    <ion-back-button defaulHref="/src/app/listadias/listadias.page.html" ></ion-back-button>
+   </ion-button> 
+   <ion-title>NuevoDias</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Nuevodia</ion-title>
+      <ion-title size="large">NuevoDias</ion-title>
     </ion-toolbar>
   </ion-header>
 </ion-content>
+
+<ion-header>
+<!-- 
+  <form [formGroup]="form">
+    <input type="text"  id="id" [(ngModel)]="form.value.id" placeholder="Id">
+    <input type="text" fecha="fechas" [(ngModel)]="form.value.fechas" placeholder=" Fecha">
+    <input type="text" disponibilidad="disponibilidad" [(ngModel)]="form.value.disponibilidad" placeholder="Disponibilidad">
+    <button type="submit">Guardar</button>
+  </form> -->
+  
+  
+</ion-header>
+

@@ -114,6 +114,10 @@ const routes: Routes = [
     path: 'nuevodia',
     loadChildren: () => import('./nuevodia/nuevodia.module').then( m => m.NuevodiaPageModule)
   },
+  {
+    path: 'editar-dia',
+    loadChildren: () => import('./editar-dia/editar-dia.module').then( m => m.EditarDiaPageModule)
+  },
 
  
 
